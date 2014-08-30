@@ -7,6 +7,9 @@ wp-content/advanced-cache.php
 wp-content/wp-cache-config.php
 sitemap.xml
 *.log
+*.tar.gz
+*.zip
+*.tar
 *codekit-config.json
 wp-content/cache/
 wp-content/backups/

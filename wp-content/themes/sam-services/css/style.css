@@ -1,8 +1,12 @@
-/* line 3, ../sass/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/callsamtoday\.com\/wp-content\/themes\/sam-services\/sass\/style\.scss}line{font-family:\000034}}
+#container {
+  max-width: 1200px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/callsamtoday\.com\/wp-content\/themes\/sam-services\/sass\/style\.scss}line{font-family:\000038}}
 #content {
   margin-top: .1em; }
 
-/* line 11, ../sass/style.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pea\/Sites\/callsamtoday\.com\/wp-content\/themes\/sam-services\/sass\/style\.scss}line{font-family:\0000318}}
 .technology-consulting .technology-consulting a,
 .video-services .video-services a,
 .audio-services .audio-services a,

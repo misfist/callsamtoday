@@ -1,0 +1,10 @@
+/* line 3, ../sass/style.scss */
+#content {
+  margin-top: .1em; }
+
+/* line 11, ../sass/style.scss */
+.technology-consulting .technology-consulting a,
+.video-services .video-services a,
+.audio-services .audio-services a,
+.computer-servcies .computer-servcies a {
+  font-weight: bold; }

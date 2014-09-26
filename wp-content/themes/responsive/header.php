@@ -85,7 +85,30 @@ if( !defined( 'ABSPATH' ) ) {
 
 		<?php endif; // header image was removed (again) ?>
 
-		<?php get_sidebar( 'top' ); ?>
+		<?php// get_sidebar( 'top' ); ?>
+
+
+		<div id="top-widget" class="top-widget testimonials">
+		<?php
+		$category_id = get_cat_ID('Testimonials');
+		$args = array( 'category' => $category_id, 'orderby' => 'rand', 'posts_per_page' => 1 );
+		$testimonials_array = get_posts( $args ); 
+		?> 
+
+		<?php
+		foreach ($testimonials_array as $post) { 
+			setup_postdata( $post );
+		?>
+			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
+				<?php the_content(); ?>
+
+			</article>
+			
+		<?php } ?>
+		</div>
+		<!-- end of #top-widget -->
+
 		<?php wp_nav_menu( array(
 			'container'       => 'div',
 			'container_class' => 'main-nav',

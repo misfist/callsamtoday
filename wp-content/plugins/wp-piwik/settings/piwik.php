@@ -7,7 +7,7 @@ if (!$bolFOpen && !$bolCURL) {
 		<strong><?php _e('Error: cURL is not enabled and fopen is not allowed to open URLs. WP-Piwik won\'t be able to connect to Piwik.'); ?></strong>
 	</td>
 </tr><?php } else { ?><tr>
-	<th colspan="2">
+	<td colspan="2">
 		<?php _e('To enable Piwik statistics, please enter', 'wp-piwik'); ?>:
 		<ol>
 			<li><?php _e('your Piwik base URL (like http://mydomain.com/piwik) or your Piwik server path (like /var/www/mydomain.com/httpdocs/piwik/)', 'wp-piwik'); ?></li>
@@ -17,20 +17,18 @@ if (!$bolFOpen && !$bolCURL) {
 	<?php if (!is_plugin_active_for_network('wp-piwik/wp-piwik.php')) { ?>
 		<p><?php _e('<strong>Important note:</strong> If you do not host this blog on your own, your site admin is able to get your auth token from the database.', 'wp-piwik'); ?></p>
 	<?php } ?>
-	</th>
+	</td>
 </tr><tr>
 	<th><?php _e('Piwik URL', 'wp-piwik'); ?> (REST API):</th>
 	<td>
-		<input type="radio" name="wp-piwik_mode" onchange="javascript:$j('#wp-piwik_path,#wp-piwik_path-label').toggleClass('wp-piwik-input-hide');" value="http" <?php echo (self::$settings->getGlobalOption('piwik_mode')=='http'?'checked="checked" ':''); ?>/>
-		<input id="wp-piwik_url" name="wp-piwik_url" type="text" value="<?php echo self::$settings->getGlobalOption('piwik_url'); ?>" />
-		<label for="wp-piwik_url"></label>
+		<input type="radio" name="wp-piwik_mode" onchange="javascript:$j('#wp-piwik_path,#wp-piwik_url').toggleClass('wp-piwik-input-hide');" value="http" <?php echo (self::$settings->getGlobalOption('piwik_mode')=='http'?'checked="checked" ':''); ?>/>
+		<input <?php echo (self::$settings->getGlobalOption('piwik_mode')=='php'?'class="wp-piwik-input-hide" ':''); ?>id="wp-piwik_url" name="wp-piwik_url" type="text" value="<?php echo self::$settings->getGlobalOption('piwik_url'); ?>" />
 	</td>
 </tr><tr>
 	<th><?php _e('Piwik path', 'wp-piwik'); ?> (PHP API, beta):</th>
 	<td>
-		<input type="radio" name="wp-piwik_mode" onchange="javascript:$j('#wp-piwik_path,#wp-piwik_path-label').toggleClass('wp-piwik-input-hide');" value="php" <?php echo (self::$settings->getGlobalOption('piwik_mode')=='php'?'checked="checked" ':''); ?>/>
+		<input type="radio" name="wp-piwik_mode" onchange="javascript:$j('#wp-piwik_path,#wp-piwik_url').toggleClass('wp-piwik-input-hide');" value="php" <?php echo (self::$settings->getGlobalOption('piwik_mode')=='php'?'checked="checked" ':''); ?>/>
 		<input <?php echo (self::$settings->getGlobalOption('piwik_mode')!='php'?'class="wp-piwik-input-hide" ':''); ?>id="wp-piwik_path" name="wp-piwik_path" type="text" value="<?php echo self::$settings->getGlobalOption('piwik_path'); ?>" />
-		<label <?php echo (self::$settings->getGlobalOption('piwik_mode')!='php'?'class="wp-piwik-input-hide" ':''); ?>id="wp-piwik_path-label" for="wp-piwik_path"><?php _e('If you like to use the PHP API and also to enable tracking by WP-Piwik, please enter your Piwik URL, too. Otherwise your tracking code may be erroneous.','wp-piwik'); ?> [<a href="http://dev.piwik.org/trac/ticket/3220">Details</a>]</label>
 		<?php
 			if (isset($_POST['wp-piwik_path']) && !empty($_POST['wp-piwik_path']) && realpath($_POST['wp-piwik_path']) === false)
 				echo '<p class="wp-piwik-eyecatcher">'.__('Invalid path. Please enter the file path to Piwik.', 'wp-piwik').'</p>';
@@ -42,7 +40,12 @@ if (!$bolFOpen && !$bolCURL) {
 		<input name="wp-piwik_token" id="wp-piwik_token" type="text" value="<?php echo self::$settings->getGlobalOption('piwik_token'); ?>" />
 		<label for="wp-piwik_token"></label>
 	</td>
-</tr><?php if (!is_plugin_active_for_network('wp-piwik/wp-piwik.php')) { ?><tr>
+</tr><tr><th><?php _e('Enable cache', 'wp-piwik'); ?>:</th><td>
+	<input type="checkbox" value="1" id="wp-piwik_cache" name="wp-piwik_cache"<?php echo (self::$settings->getGlobalOption('cache')?' checked="checked"':''); ?> />
+	<label for="wp-piwik_cache"><?php _e('Cache API calls, which not contain today\'s values, for a week', 'wp-piwik'); ?>.</label>
+</td></tr>
+
+<?php if (!is_plugin_active_for_network('wp-piwik/wp-piwik.php')) { ?><tr>
 	<th><?php _e('Auto config', 'wp-piwik'); ?>:</th>
 	<td>
 		<input name="wp-piwik_auto_site_config" id="wp-piwik_auto_site_config" value="1" type="checkbox"<?php echo (self::$settings->getGlobalOption('auto_site_config')?' checked="checked"':'') ?>/>

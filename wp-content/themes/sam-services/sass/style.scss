@@ -1,20 +1,139 @@
+/*
+Theme Name: SAM Services (SAM Services (_s))
+Theme URI: http://underscores.me/
+Author: Pea
+Author URI: http://patricia-lutz.com
+Description: Custom theme built with SAM Services (_s) (Underscores)
+Version: 1.0-wpcom
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: sam-services
+Tags:
 
-// CONTAINERS
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
 
-#container {
-	max-width: 1200px;
-}
+ SAM Services (_s) is based on Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
 
-#content {
-	margin-top: .1em;
-}
+Resetting and rebuilding styles have been helped along thanks to the fine work of
+Eric Meyer http://meyerweb.com/eric/tools/css/reset/index.html
+along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+and Blueprint http://www.blueprintcss.org/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 Reset
+2.0 Typography
+3.0 Elements
+4.0 Forms
+5.0 Navigation
+	5.1 Links
+	5.2 Menus
+6.0 Accessibility
+7.0 Alignments
+8.0 Clearings
+9.0 Widgets
+10.0 Content
+	10.1 Posts and pages
+	10.2 Asides
+	10.3 Comments
+11.0 Infinite scroll
+12.0 Media
+	12.1 Captions
+	12.2 Galleries
+13.0 Bourbon and Libraries
+14.0 Layouts and Containers
+15.0 Custom Modules	
+--------------------------------------------------------------*/
+@import "variables-site/variables-site";
+@import "mixins/mixins-master";
+
+
+/*--------------------------------------------------------------
+1.0 Reset
+--------------------------------------------------------------*/
+@import "reset";
+
+/*--------------------------------------------------------------
+2.0 Typography
+--------------------------------------------------------------*/
+// @import "typography/typography";
+
+/*--------------------------------------------------------------
+3.0 Elements
+--------------------------------------------------------------*/
+@import "elements/elements";
+
+/*--------------------------------------------------------------
+4.0 Forms
+--------------------------------------------------------------*/
+@import "forms/forms";
+
+/*--------------------------------------------------------------
+5.0 Navigation
+--------------------------------------------------------------*/
+@import "navigation/navigation";
+
+/*--------------------------------------------------------------
+6.0 Accessibility
+--------------------------------------------------------------*/
+@import "modules/accessibility";
+
+/*--------------------------------------------------------------
+7.0 Alignments
+--------------------------------------------------------------*/
+@import "modules/alignments";
+
+/*--------------------------------------------------------------
+8.0 Clearings
+--------------------------------------------------------------*/
+@import "modules/clearings";
+
+/*--------------------------------------------------------------
+9.0 Widgets
+--------------------------------------------------------------*/
+@import "site/secondary/widgets";
+
+/*--------------------------------------------------------------
+10.0 Content
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+11.0 Infinite scroll
+--------------------------------------------------------------*/
+// @import "modules/infinite-scroll";
+
+/*--------------------------------------------------------------
+12.0 Media
+--------------------------------------------------------------*/
+@import "media/media";
+
+/*--------------------------------------------------------------
+13.0 Bourbon and Libraries
+--------------------------------------------------------------*/
+@import "lib/bourbon/bourbon";
+@import "lib/base/base";
+@import "lib/neat/neat";
+
+/*--------------------------------------------------------------
+14.0 Layout and Containers
+Using Bourbon Neat http://neat.bourbon.io
+--------------------------------------------------------------*/
+@import "site/site";
+
+/*--------------------------------------------------------------
+15.0 Custom Modules
+Using Bourbon Refills http://refills.bourbon.io/
+--------------------------------------------------------------*/
+@import "modules/modules";
+
+/*--------------------------------------------------------------
+16.0 Typography
+--------------------------------------------------------------*/
+@import "typography/typography";
 
 
 
-// SUBMENUS
-.technology-consulting .technology-consulting a,
-.video-services .video-services a,
-.audio-services .audio-services a,
-.computer-servcies .computer-servcies a {
-	font-weight: bold;
-}

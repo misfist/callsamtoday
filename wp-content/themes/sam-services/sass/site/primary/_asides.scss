@@ -1,0 +1,21 @@
+.blog .format-aside .entry-title,
+.archive .format-aside .entry-title,
+.widget_categories h1 {
+	display: none;
+}
+
+#secondary {
+	background: $light-gray;
+	aside {
+		padding: 2em;
+	}
+}
+
+.computer-services .computer-services a,
+.audio-services .audio-services a,
+.video-services .video-services a,
+.technology-consulting .technology-consulting a,
+.current-cat a {
+	font-weight: bold;
+	color: $dark-gray;
+}

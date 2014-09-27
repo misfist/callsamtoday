@@ -1,0 +1,30 @@
+// Using Bourbon Neat http://neat.bourbon.io
+
+#content {
+	@include outer-container;
+	padding-right: 1%;
+	padding-left: 1%;
+
+	#primary {
+		@include span-columns(12);
+	}
+
+	article>header {
+		clear: both;
+	}
+}
+
+.page-template-content-sidebar-page-php,
+.blog,
+.archive,
+.category {
+	#content {
+		#primary {
+			@include span-columns(8);
+		}
+		#secondary {
+			@include span-columns(4);
+		}		
+	}
+}
+

@@ -957,6 +957,18 @@ Using Bourbon Neat http://neat.bourbon.io
   .category #content #secondary:last-child {
     margin-right: 0; }
 
+/* line 31, sass/site/_containers.scss */
+footer.footer .copyleft {
+  height: 30px;
+  line-height: 30px;
+  vertical-align: center; }
+
+/* line 37, sass/site/_containers.scss */
+footer.footer .copyleft img {
+  display: inline-block;
+  width: 25px;
+  height: auto; }
+
 /*--------------------------------------------------------------
 10.2 Posts and pages
 --------------------------------------------------------------*/

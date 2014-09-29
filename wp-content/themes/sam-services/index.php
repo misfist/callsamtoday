@@ -18,20 +18,30 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) : ?>
 
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
+		<?php 
+		$cat = get_category_by_slug( 'testimonials' );
+		$cat_id = $cat->term_id;
+		?>
 
-				<?php
-					/* Include the Post-Format-specific template for the content.
-					 * If you want to override this in a child theme, then include a file
-					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-					 */
-					get_template_part( 'content', get_post_format() );
-				?>
+		<?php
+		// Don't include posts categorized as 'testimonials'
+		$args = array( 'category__not_in' => $cat_id); ?>
 
-			<?php endwhile; ?>
+		<?php $postlist = get_posts( $args ); ?>
 
-			<?php sam_services_paging_nav(); ?>
+		<?php foreach ( $postlist as $post ) : setup_postdata( $post ); ?>
+		<?php
+				/* Include the Post-Format-specific template for the content.
+				 * If you want to override this in a child theme, then include a file
+				 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
+				 */
+				get_template_part( 'content', get_post_format() );
+			?>
+		<?php endforeach; ?>
+
+		<?php sam_services_paging_nav(); ?>
+
+		<?php wp_reset_postdata();?>
 
 		<?php else : ?>
 

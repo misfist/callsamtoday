@@ -102,12 +102,11 @@ cite {
 }
 
 
-blockquote,
-.rpwe-summary {
+blockquote {
   background: darken($white, 5%);
   border-left: 10px solid $blue;
   padding: 0.5em 10px;
-  quotes: "\201C""\201D""\2018""\2019";
+  quotes: "\201C""\201D""\201C""\201D";
   &:before {
     color: $medium-gray;
     content: open-quote;
@@ -116,15 +115,12 @@ blockquote,
     margin-right: 0.25em;
     vertical-align: -0.4em;
   }
-  &:after {
-    content: '\00000A - client';
-    font-style: italic;
-    color: $medium-gray;
-    clear: right;
-    display: block;
-  }
   p {
     display: inline;
+  }
+  cite {
+    display: block;
+    text-align: right;
   }
 }
 

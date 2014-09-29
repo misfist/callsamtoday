@@ -754,33 +754,26 @@ cite {
   display: none; }
 
 /* line 105, sass/lib/base/_typography.scss */
-blockquote,
-.rpwe-summary {
+blockquote {
   background: #f2f2f2;
   border-left: 10px solid #477DCA;
   padding: 0.5em 10px;
-  quotes: "“" "”" "‘" "’"; }
-  /* line 111, sass/lib/base/_typography.scss */
-  blockquote:before,
-  .rpwe-summary:before {
+  quotes: "“" "”" "“" "”"; }
+  /* line 110, sass/lib/base/_typography.scss */
+  blockquote:before {
     color: #999;
     content: open-quote;
     font-size: 4em;
     line-height: 0.1em;
     margin-right: 0.25em;
     vertical-align: -0.4em; }
-  /* line 119, sass/lib/base/_typography.scss */
-  blockquote:after,
-  .rpwe-summary:after {
-    content: '\00000A - client';
-    font-style: italic;
-    color: #999;
-    clear: right;
-    display: block; }
-  /* line 126, sass/lib/base/_typography.scss */
-  blockquote p,
-  .rpwe-summary p {
+  /* line 118, sass/lib/base/_typography.scss */
+  blockquote p {
     display: inline; }
+  /* line 121, sass/lib/base/_typography.scss */
+  blockquote cite {
+    display: block;
+    text-align: right; }
 
 /* line 1, sass/lib/base/_forms.scss */
 fieldset {

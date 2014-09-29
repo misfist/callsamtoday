@@ -511,16 +511,16 @@ a {
 /*--------------------------------------------------------------
 9.0 Widgets
 --------------------------------------------------------------*/
-/* line 1, sass/site/secondary/_widgets.scss */
+/* line 3, sass/site/secondary/_widgets.scss */
 .widget {
   margin: 0 0 1.5em;
   /* Make sure select elements fit in widgets */ }
-  /* line 5, sass/site/secondary/_widgets.scss */
+  /* line 7, sass/site/secondary/_widgets.scss */
   .widget select {
     max-width: 100%; }
 
 /* Search widget */
-/* line 11, sass/site/secondary/_widgets.scss */
+/* line 13, sass/site/secondary/_widgets.scss */
 .widget_search .search-submit {
   display: none; }
 
@@ -741,6 +741,42 @@ cite {
   /* line 90, sass/lib/base/_typography.scss */
   cite:before {
     content: "\2014 \00A0"; }
+
+/* line 96, sass/lib/base/_typography.scss */
+.recent-posts-extended h1 {
+  font-size: 2.4rem; }
+/* line 99, sass/lib/base/_typography.scss */
+.recent-posts-extended h3 {
+  display: none; }
+
+/* line 105, sass/lib/base/_typography.scss */
+blockquote,
+.rpwe-summary {
+  background: #f2f2f2;
+  border-left: 10px solid #477DCA;
+  padding: 0.5em 10px;
+  quotes: "“" "”" "‘" "’"; }
+  /* line 111, sass/lib/base/_typography.scss */
+  blockquote:before,
+  .rpwe-summary:before {
+    color: #999;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em; }
+  /* line 119, sass/lib/base/_typography.scss */
+  blockquote:after,
+  .rpwe-summary:after {
+    content: '\00000A - client';
+    font-style: italic;
+    color: #999;
+    clear: right;
+    display: block; }
+  /* line 126, sass/lib/base/_typography.scss */
+  blockquote p,
+  .rpwe-summary p {
+    display: inline; }
 
 /* line 1, sass/lib/base/_forms.scss */
 fieldset {
@@ -1032,16 +1068,16 @@ footer.footer .copyleft img {
 /*--------------------------------------------------------------
 10.5 Widgets
 --------------------------------------------------------------*/
-/* line 1, sass/site/secondary/_widgets.scss */
+/* line 3, sass/site/secondary/_widgets.scss */
 .widget {
   margin: 0 0 1.5em;
   /* Make sure select elements fit in widgets */ }
-  /* line 5, sass/site/secondary/_widgets.scss */
+  /* line 7, sass/site/secondary/_widgets.scss */
   .widget select {
     max-width: 100%; }
 
 /* Search widget */
-/* line 11, sass/site/secondary/_widgets.scss */
+/* line 13, sass/site/secondary/_widgets.scss */
 .widget_search .search-submit {
   display: none; }
 
@@ -1917,5 +1953,20 @@ header.navigation {
 /*--------------------------------------------------------------
 16.0 Typography
 --------------------------------------------------------------*/
+/*--------------------------------------------------------------
+17.0 Widgets
+--------------------------------------------------------------*/
+/* line 3, sass/site/secondary/_widgets.scss */
+.widget {
+  margin: 0 0 1.5em;
+  /* Make sure select elements fit in widgets */ }
+  /* line 7, sass/site/secondary/_widgets.scss */
+  .widget select {
+    max-width: 100%; }
+
+/* Search widget */
+/* line 13, sass/site/secondary/_widgets.scss */
+.widget_search .search-submit {
+  display: none; }
 
 /*# sourceMappingURL=style.css.map */

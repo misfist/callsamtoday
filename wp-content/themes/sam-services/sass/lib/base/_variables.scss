@@ -71,3 +71,29 @@ $form-box-shadow: inset 0 1px 3px rgba(black,0.06);
 $form-box-shadow-focus: $form-box-shadow, 0 0 5px rgba(darken($form-border-color-focus, 5), 0.7);
 $form-font-size: $base-font-size;
 $form-font-family: $base-font-family;
+
+
+@mixin breakpoint($point) {
+	@if $point == tiny {
+		@media (min-width: 321px)  { @content; } 
+	}
+	@if $point == small {
+		@media (min-width: 481px) { @content; }
+	}
+	@if $point == medium {
+		@media (min-width: 769px) { @content; }
+	}
+	@else if $point == large {
+		@media (min-width: 1020px) { @content; }
+	}
+}
+
+$mobilescreen: em(480);
+$tabletscreen: em(480 + 1);
+$desktopscreen: em(768);
+$largescreen: em(1020);
+
+$mobile: new-breakpoint(max-width $mobilescreen);
+$tablet: new-breakpoint(max-width $desktopscreen min-width $tabletscreen);
+$desktop: new-breakpoint(min-width $desktopscreen);
+$large: new-breakpoint(min-width $largescreen);

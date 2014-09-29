@@ -524,6 +524,10 @@ a {
 .widget_search .search-submit {
   display: none; }
 
+/* line 18, sass/site/secondary/_widgets.scss */
+.widget_nav_menu li {
+  padding-bottom: .5em; }
+
 /*--------------------------------------------------------------
 10.0 Content
 --------------------------------------------------------------*/
@@ -992,14 +996,58 @@ Using Bourbon Neat http://neat.bourbon.io
   .archive #content #secondary:last-child,
   .category #content #secondary:last-child {
     margin-right: 0; }
+@media screen and (max-width: 30em) {
+  /* line 29, sass/site/_containers.scss */
+  .page-template-content-sidebar-page-php #content #primary,
+  .blog #content #primary,
+  .archive #content #primary,
+  .category #content #primary {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    /* line 38, sass/lib/neat/grid/_span-columns.scss */
+    .page-template-content-sidebar-page-php #content #primary:last-child,
+    .blog #content #primary:last-child,
+    .archive #content #primary:last-child,
+    .category #content #primary:last-child {
+      margin-right: 0; }
+  /* line 32, sass/site/_containers.scss */
+  .page-template-content-sidebar-page-php #content #secondary,
+  .blog #content #secondary,
+  .archive #content #secondary,
+  .category #content #secondary {
+    display: none; } }
+@media screen and (max-width: 48em) and (min-width: 30.0625em) {
+  /* line 37, sass/site/_containers.scss */
+  .page-template-content-sidebar-page-php #content #primary,
+  .blog #content #primary,
+  .archive #content #primary,
+  .category #content #primary {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    /* line 38, sass/lib/neat/grid/_span-columns.scss */
+    .page-template-content-sidebar-page-php #content #primary:last-child,
+    .blog #content #primary:last-child,
+    .archive #content #primary:last-child,
+    .category #content #primary:last-child {
+      margin-right: 0; }
+  /* line 40, sass/site/_containers.scss */
+  .page-template-content-sidebar-page-php #content #secondary,
+  .blog #content #secondary,
+  .archive #content #secondary,
+  .category #content #secondary {
+    display: none; } }
 
-/* line 31, sass/site/_containers.scss */
+/* line 49, sass/site/_containers.scss */
 footer.footer .copyleft {
   height: 30px;
   line-height: 30px;
   vertical-align: center; }
 
-/* line 37, sass/site/_containers.scss */
+/* line 55, sass/site/_containers.scss */
 footer.footer .copyleft img {
   display: inline-block;
   width: 25px;
@@ -1051,9 +1099,13 @@ footer.footer .copyleft img {
   background: #DDD; }
   /* line 9, sass/site/primary/_asides.scss */
   #secondary aside {
-    padding: 2em; }
+    padding: 0 2em 2em 2em; }
+  /* line 12, sass/site/primary/_asides.scss */
+  #secondary aside:first-child {
+    padding: 2em;
+    margin-bottom: 0; }
 
-/* line 14, sass/site/primary/_asides.scss */
+/* line 18, sass/site/primary/_asides.scss */
 .computer-services .computer-services a,
 .audio-services .audio-services a,
 .video-services .video-services a,
@@ -1080,6 +1132,10 @@ footer.footer .copyleft img {
 /* line 13, sass/site/secondary/_widgets.scss */
 .widget_search .search-submit {
   display: none; }
+
+/* line 18, sass/site/secondary/_widgets.scss */
+.widget_nav_menu li {
+  padding-bottom: .5em; }
 
 /*--------------------------------------------------------------
 15.0 Custom Modules
@@ -1968,5 +2024,9 @@ header.navigation {
 /* line 13, sass/site/secondary/_widgets.scss */
 .widget_search .search-submit {
   display: none; }
+
+/* line 18, sass/site/secondary/_widgets.scss */
+.widget_nav_menu li {
+  padding-bottom: .5em; }
 
 /*# sourceMappingURL=style.css.map */

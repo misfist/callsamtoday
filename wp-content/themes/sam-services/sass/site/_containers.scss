@@ -25,8 +25,26 @@
 		#secondary {
 			@include span-columns(4);
 		}		
+		@include media($mobile) {
+			#primary {
+				@include span-columns(12);
+			}
+			#secondary {
+				display: none;
+			}
+		}
+		@include media($tablet) {
+			#primary {
+				@include span-columns(12);
+			}
+			#secondary {
+				display: none;
+			}
+		}
 	}
 }
+
+
 
 footer.footer .copyleft {
 	height: 30px;

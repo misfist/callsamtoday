@@ -7,7 +7,11 @@
 #secondary {
 	background: $light-gray;
 	aside {
+		padding: 0 2em 2em 2em;
+	}
+	aside:first-child {
 		padding: 2em;
+		margin-bottom: 0;
 	}
 }
 

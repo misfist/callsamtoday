@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name:  Testimonials Widget
+ * Plugin Name:  SAM Testimonials Widget
  * Plugin URI:   http://callsamtoday.com
  * Description:  Displays a post categorized as "Testimonials" in a widget as a blockquote.
  * Version:      0.1
@@ -17,7 +17,7 @@
  * You should have received a copy of the GNU General Public License along with this program; if not, write 
  * to the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
  *
- * @package    Testimonials_Widget
+ * @package    SAM Testimonials_Widget
  * @since      0.1
  * @author     Pea
  * @license    http://www.gnu.org/licenses/gpl-2.0.html

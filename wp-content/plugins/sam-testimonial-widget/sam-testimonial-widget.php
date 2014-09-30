@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name:  SAM Testimonials Widget
+ * Plugin Name:  SAM Testimonial Widget
  * Plugin URI:   http://callsamtoday.com
  * Description:  Displays a post categorized as "Testimonials" in a widget as a blockquote.
  * Version:      0.1

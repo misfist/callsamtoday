@@ -2,7 +2,7 @@
 /**
  * Plugin Name:  SAM Testimonial Widget
  * Plugin URI:   http://callsamtoday.com
- * Description:  Displays a post categorized as "Testimonials" in a widget as a blockquote.
+ * Description:  Displays a post categorized as "Testimonials" in a widget as a blockquote. This is not the same as <a href="https://wordpress.org/plugins/testimonials-widget/" target="_blank">Testimonials by Aihrus</a>.
  * Version:      0.1
  * Author:       Pea
  * Author URI:   http://patricia-lutz.com

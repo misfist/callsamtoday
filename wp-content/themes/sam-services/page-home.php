@@ -36,26 +36,25 @@ get_header(); ?>
 		<ul class="bullets">
 		  <li class="bullet four-col-bullet">
 		    <div class="bullet-icon bullet-icon-1">
-		      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png
-		" alt="">
+		      <img src="<?php echo get_template_directory_uri(); ?>/images/icon-service-support.png" alt="">
 		    </div>
 		    <?php dynamic_sidebar( 'home-widget-1' ); ?>
 		  </li>  
 		  <li class="bullet four-col-bullet">
 		    <div class="bullet-icon bullet-icon-2">
-		      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_2.png" alt="">
+		      <img src="<?php echo get_template_directory_uri(); ?>/images/icon-service-video.png" alt="">
 		    </div>
 		    <?php dynamic_sidebar( 'home-widget-2' ); ?>
 		  </li>
 		  <li class="bullet four-col-bullet">
 		    <div class="bullet-icon bullet-icon-3">
-		      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_3.png" alt="">
+		      <img src="<?php echo get_template_directory_uri(); ?>/images/icon-service-audio.png" alt="">
 		    </div>
 		    <?php dynamic_sidebar( 'home-widget-3' ); ?>
 		  </li> 
 		  <li class="bullet four-col-bullet">
 		    <div class="bullet-icon bullet-icon-4">
-		      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_4.png" alt="">
+		      <img src="<?php echo get_template_directory_uri(); ?>/images/icon-service-technology.png" alt="">
 		    </div>
 		    <?php dynamic_sidebar( 'home-widget-4' ); ?>
 		  </li> 

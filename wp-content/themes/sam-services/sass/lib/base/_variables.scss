@@ -2,11 +2,13 @@ $oswald: 'Oswald';
 $opensans: 'Open Sans';
 $condensed: 'Open Sans Condensed';
 $lato: 'Lato';
+$quattrocento: 'Quattrocento', serif;
+$helvetica: 'Helvetica', sans-serif;
 
 
 // Typography
-$sans-serif: $lato;
-$serif: $georgia;
+$sans-serif: $helvetica;
+$serif: $quattrocento;
 $base-font-family: $sans-serif;
 $header-font-family: $helvetica;
 

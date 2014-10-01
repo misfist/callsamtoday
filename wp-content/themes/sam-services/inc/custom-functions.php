@@ -19,6 +19,6 @@ function glocal_network_class_names($classes) {
 	return $classes;
 }
 
-remove_filter( 'the_content', 'wpautop' );
+// remove_filter( 'the_content', 'wpautop' );
 
 ?>

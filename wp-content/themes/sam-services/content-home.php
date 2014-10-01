@@ -7,7 +7,9 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class('intro-text'); ?>>
-	<div class="entry-content">
+	<div class="intro-text">
+		<h1 class="entry-title"><?php the_title(); ?></h1>
+
 		<?php the_content(); ?>
 		<?php
 			wp_link_pages( array(

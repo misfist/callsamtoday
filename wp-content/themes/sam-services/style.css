@@ -1074,6 +1074,10 @@ footer.footer .copyleft img {
   clear: both;
   margin: 0 0 1.5em; }
 
+/* line 30, sass/site/primary/_posts-and-pages.scss */
+h1.entry-title {
+  padding-top: .5em; }
+
 /*--------------------------------------------------------------
 10.3 Asides
 --------------------------------------------------------------*/

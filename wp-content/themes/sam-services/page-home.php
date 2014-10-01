@@ -42,13 +42,13 @@ get_header(); ?>
 		  </li>  
 		  <li class="bullet four-col-bullet">
 		    <div class="bullet-icon bullet-icon-2">
-		      <img src="<?php echo get_template_directory_uri(); ?>/images/icon-service-video.png" alt="">
+		      <img src="<?php echo get_template_directory_uri(); ?>/images/icon-service-audio.png" alt="">
 		    </div>
 		    <?php dynamic_sidebar( 'home-widget-2' ); ?>
 		  </li>
 		  <li class="bullet four-col-bullet">
 		    <div class="bullet-icon bullet-icon-3">
-		      <img src="<?php echo get_template_directory_uri(); ?>/images/icon-service-audio.png" alt="">
+		      <img src="<?php echo get_template_directory_uri(); ?>/images/icon-service-video.png" alt="">
 		    </div>
 		    <?php dynamic_sidebar( 'home-widget-3' ); ?>
 		  </li> 

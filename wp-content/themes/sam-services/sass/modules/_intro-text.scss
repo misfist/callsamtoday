@@ -66,5 +66,8 @@
         line-height: 0;
       }
     }
+    & + p {
+      padding-top: 2em;
+    }
   }
 }

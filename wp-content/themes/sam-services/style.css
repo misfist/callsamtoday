@@ -1740,6 +1740,9 @@ header.navigation {
       .intro-text p a span {
         font-size: 1.3em;
         line-height: 0; }
+    /* line 69, sass/modules/_intro-text.scss */
+    .intro-text p + p {
+      padding-top: 2em; }
 
 /*--------------------------------------------------------------
 15.5 Side Image

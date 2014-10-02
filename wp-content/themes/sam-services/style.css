@@ -1175,9 +1175,10 @@ header.navigation {
     padding-right: 2em; }
     /* line 38, sass/modules/_header-navigation.scss */
     header.navigation .logo img {
+      width: auto;
       max-height: 60px;
       padding: .8em 0; }
-  /* line 46, sass/modules/_header-navigation.scss */
+  /* line 48, sass/modules/_header-navigation.scss */
   header.navigation .navigation-menu-button {
     color: rgba(255, 255, 255, 0.7);
     display: block;
@@ -1189,21 +1190,21 @@ header.navigation {
     padding-right: 1em;
     text-transform: uppercase; }
     @media screen and (min-width: 53.75em) {
-      /* line 46, sass/modules/_header-navigation.scss */
+      /* line 48, sass/modules/_header-navigation.scss */
       header.navigation .navigation-menu-button {
         display: none; } }
-    /* line 61, sass/modules/_header-navigation.scss */
+    /* line 63, sass/modules/_header-navigation.scss */
     header.navigation .navigation-menu-button:hover {
       color: white; }
-  /* line 68, sass/modules/_header-navigation.scss */
+  /* line 70, sass/modules/_header-navigation.scss */
   header.navigation .nav {
     z-index: 9999999;
     float: none; }
     @media screen and (min-width: 53.75em) {
-      /* line 68, sass/modules/_header-navigation.scss */
+      /* line 70, sass/modules/_header-navigation.scss */
       header.navigation .nav {
         float: left; } }
-  /* line 76, sass/modules/_header-navigation.scss */
+  /* line 78, sass/modules/_header-navigation.scss */
   header.navigation ul#navigation-menu {
     -webkit-transform-style: preserve-3d;
     clear: both;
@@ -1214,12 +1215,12 @@ header.navigation {
     width: 100%;
     z-index: 9999; }
     @media screen and (min-width: 53.75em) {
-      /* line 76, sass/modules/_header-navigation.scss */
+      /* line 78, sass/modules/_header-navigation.scss */
       header.navigation ul#navigation-menu {
         display: inline;
         margin: 0;
         padding: 0; } }
-  /* line 95, sass/modules/_header-navigation.scss */
+  /* line 97, sass/modules/_header-navigation.scss */
   header.navigation ul li.nav-link,
   header.navigation ul li.menu-item {
     background: #333;
@@ -1231,7 +1232,7 @@ header.navigation {
     width: 100%;
     z-index: 9999; }
     @media screen and (min-width: 53.75em) {
-      /* line 95, sass/modules/_header-navigation.scss */
+      /* line 97, sass/modules/_header-navigation.scss */
       header.navigation ul li.nav-link,
       header.navigation ul li.menu-item {
         background: transparent;
@@ -1239,48 +1240,48 @@ header.navigation {
         line-height: 60px;
         text-decoration: none;
         width: auto; } }
-    /* line 114, sass/modules/_header-navigation.scss */
+    /* line 116, sass/modules/_header-navigation.scss */
     header.navigation ul li.nav-link a,
     header.navigation ul li.menu-item a {
       color: rgba(255, 255, 255, 0.7);
       display: inline-block;
       font-weight: 400; }
       @media screen and (min-width: 53.75em) {
-        /* line 114, sass/modules/_header-navigation.scss */
+        /* line 116, sass/modules/_header-navigation.scss */
         header.navigation ul li.nav-link a,
         header.navigation ul li.menu-item a {
           padding-right: 1em; } }
-      /* line 123, sass/modules/_header-navigation.scss */
+      /* line 125, sass/modules/_header-navigation.scss */
       header.navigation ul li.nav-link a:hover,
       header.navigation ul li.menu-item a:hover {
         color: white; }
-  /* line 129, sass/modules/_header-navigation.scss */
+  /* line 131, sass/modules/_header-navigation.scss */
   header.navigation .active-nav-item a,
   header.navigation .current-menu-item a {
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     padding-bottom: 3px; }
-  /* line 137, sass/modules/_header-navigation.scss */
+  /* line 139, sass/modules/_header-navigation.scss */
   header.navigation li.more.nav-link,
   header.navigation li.menu-item-has-children.menu-item {
     padding-right: 0; }
     @media screen and (min-width: 53.75em) {
-      /* line 137, sass/modules/_header-navigation.scss */
+      /* line 139, sass/modules/_header-navigation.scss */
       header.navigation li.more.nav-link,
       header.navigation li.menu-item-has-children.menu-item {
         padding-right: 1em; } }
-    /* line 145, sass/modules/_header-navigation.scss */
+    /* line 147, sass/modules/_header-navigation.scss */
     header.navigation li.more.nav-link > ul > li:first-child a,
     header.navigation li.menu-item-has-children.menu-item > ul > li:first-child a {
       padding-top: 1em; }
-    /* line 149, sass/modules/_header-navigation.scss */
+    /* line 151, sass/modules/_header-navigation.scss */
     header.navigation li.more.nav-link a,
     header.navigation li.menu-item-has-children.menu-item a {
       margin-right: 1em; }
-    /* line 153, sass/modules/_header-navigation.scss */
+    /* line 155, sass/modules/_header-navigation.scss */
     header.navigation li.more.nav-link > a,
     header.navigation li.menu-item-has-children.menu-item > a {
       padding-right: 0.6em; }
-    /* line 157, sass/modules/_header-navigation.scss */
+    /* line 159, sass/modules/_header-navigation.scss */
     header.navigation li.more.nav-link > a:after,
     header.navigation li.menu-item-has-children.menu-item > a:after {
       position: absolute;
@@ -1290,85 +1291,85 @@ header.navigation {
       left: auto;
       content: '\25BE';
       color: rgba(255, 255, 255, 0.7); }
-  /* line 164, sass/modules/_header-navigation.scss */
+  /* line 166, sass/modules/_header-navigation.scss */
   header.navigation li.more,
   header.navigation li.menu-item-has-children {
     overflow: visible;
     padding-right: 0; }
-    /* line 169, sass/modules/_header-navigation.scss */
+    /* line 171, sass/modules/_header-navigation.scss */
     header.navigation li.more a,
     header.navigation li.menu-item-has-children a {
       padding-right: .8em; }
-    /* line 173, sass/modules/_header-navigation.scss */
+    /* line 175, sass/modules/_header-navigation.scss */
     header.navigation li.more > a,
     header.navigation li.menu-item-has-children > a {
       padding-right: 1.6em;
       position: relative; }
       @media screen and (min-width: 53.75em) {
-        /* line 173, sass/modules/_header-navigation.scss */
+        /* line 175, sass/modules/_header-navigation.scss */
         header.navigation li.more > a,
         header.navigation li.menu-item-has-children > a {
           margin-right: 1em; } }
-      /* line 181, sass/modules/_header-navigation.scss */
+      /* line 183, sass/modules/_header-navigation.scss */
       header.navigation li.more > a:after,
       header.navigation li.menu-item-has-children > a:after {
         content: '›';
         font-size: 1.2em;
         position: absolute;
         right: 0.5em; }
-    /* line 189, sass/modules/_header-navigation.scss */
+    /* line 191, sass/modules/_header-navigation.scss */
     header.navigation li.more:hover > .submenu, header.navigation li.more:hover > .sub-menu,
     header.navigation li.menu-item-has-children:hover > .submenu,
     header.navigation li.menu-item-has-children:hover > .sub-menu {
       display: block; }
     @media screen and (min-width: 53.75em) {
-      /* line 164, sass/modules/_header-navigation.scss */
+      /* line 166, sass/modules/_header-navigation.scss */
       header.navigation li.more,
       header.navigation li.menu-item-has-children {
         padding-right: .8em;
         position: relative; } }
-  /* line 200, sass/modules/_header-navigation.scss */
+  /* line 202, sass/modules/_header-navigation.scss */
   header.navigation ul.submenu,
   header.navigation ul.sub-menu {
     display: none;
     padding-left: 0; }
     @media screen and (min-width: 53.75em) {
-      /* line 200, sass/modules/_header-navigation.scss */
+      /* line 202, sass/modules/_header-navigation.scss */
       header.navigation ul.submenu,
       header.navigation ul.sub-menu {
         left: -1em;
         position: absolute;
         top: 1.5em; } }
     @media screen and (min-width: 53.75em) {
-      /* line 211, sass/modules/_header-navigation.scss */
+      /* line 213, sass/modules/_header-navigation.scss */
       header.navigation ul.submenu .submenu,
       header.navigation ul.submenu .sub-menu,
       header.navigation ul.sub-menu .submenu,
       header.navigation ul.sub-menu .sub-menu {
         left: 12.8em;
         top: 0; } }
-    /* line 219, sass/modules/_header-navigation.scss */
+    /* line 221, sass/modules/_header-navigation.scss */
     header.navigation ul.submenu li,
     header.navigation ul.sub-menu li {
       display: block;
       padding-right: 0; }
       @media screen and (min-width: 53.75em) {
-        /* line 219, sass/modules/_header-navigation.scss */
+        /* line 221, sass/modules/_header-navigation.scss */
         header.navigation ul.submenu li,
         header.navigation ul.sub-menu li {
           line-height: 46.15385px; }
-          /* line 226, sass/modules/_header-navigation.scss */
+          /* line 228, sass/modules/_header-navigation.scss */
           header.navigation ul.submenu li:first-child > a,
           header.navigation ul.sub-menu li:first-child > a {
             border-top-left-radius: 3px;
             border-top-right-radius: 3px; }
-          /* line 231, sass/modules/_header-navigation.scss */
+          /* line 233, sass/modules/_header-navigation.scss */
           header.navigation ul.submenu li:last-child > a,
           header.navigation ul.sub-menu li:last-child > a {
             border-bottom-left-radius: 3px;
             border-bottom-right-radius: 3px;
             padding-bottom: .7em; } }
-      /* line 238, sass/modules/_header-navigation.scss */
+      /* line 240, sass/modules/_header-navigation.scss */
       header.navigation ul.submenu li a,
       header.navigation ul.sub-menu li a {
         background-color: #2b2b2b;
@@ -1376,14 +1377,14 @@ header.navigation {
         text-align: right;
         width: 100%; }
         @media screen and (min-width: 53.75em) {
-          /* line 238, sass/modules/_header-navigation.scss */
+          /* line 240, sass/modules/_header-navigation.scss */
           header.navigation ul.submenu li a,
           header.navigation ul.sub-menu li a {
             background-color: #333;
             padding-left: 1em;
             text-align: left;
             width: 13em; } }
-  /* line 256, sass/modules/_header-navigation.scss */
+  /* line 258, sass/modules/_header-navigation.scss */
   header.navigation .navigation-tools {
     *zoom: 1;
     display: block;
@@ -1399,12 +1400,12 @@ header.navigation {
     header.navigation .navigation-tools:after {
       clear: both; }
     @media screen and (min-width: 53.75em) {
-      /* line 256, sass/modules/_header-navigation.scss */
+      /* line 258, sass/modules/_header-navigation.scss */
       header.navigation .navigation-tools {
         background: transparent;
         float: right;
         clear: none; } }
-  /* line 271, sass/modules/_header-navigation.scss */
+  /* line 273, sass/modules/_header-navigation.scss */
   header.navigation a.sign-up,
   header.navigation a.contact {
     margin-top: 1.2em;
@@ -1421,22 +1422,22 @@ header.navigation {
     text-transform: uppercase;
     padding: .4em .5em; }
     @media screen and (min-width: 53.75em) {
-      /* line 271, sass/modules/_header-navigation.scss */
+      /* line 273, sass/modules/_header-navigation.scss */
       header.navigation a.sign-up,
       header.navigation a.contact {
         padding: .5em 1em; } }
-    /* line 289, sass/modules/_header-navigation.scss */
+    /* line 291, sass/modules/_header-navigation.scss */
     header.navigation a.sign-up:hover,
     header.navigation a.contact:hover {
       background: #6f99d5; }
-  /* line 296, sass/modules/_header-navigation.scss */
+  /* line 298, sass/modules/_header-navigation.scss */
   header.navigation .search-bar {
     padding: .85em .6em;
     float: left; }
-    /* line 303, sass/modules/_header-navigation.scss */
+    /* line 305, sass/modules/_header-navigation.scss */
     header.navigation .search-bar .search-and-submit {
       position: relative; }
-      /* line 306, sass/modules/_header-navigation.scss */
+      /* line 308, sass/modules/_header-navigation.scss */
       header.navigation .search-bar .search-and-submit input[type=search] {
         background: #404040;
         border: 1px solid #262626;
@@ -1447,10 +1448,10 @@ header.navigation {
         border-radius: 6px;
         margin: 0; }
         @media screen and (min-width: 53.75em) {
-          /* line 306, sass/modules/_header-navigation.scss */
+          /* line 308, sass/modules/_header-navigation.scss */
           header.navigation .search-bar .search-and-submit input[type=search] {
             width: 100%; } }
-      /* line 321, sass/modules/_header-navigation.scss */
+      /* line 323, sass/modules/_header-navigation.scss */
       header.navigation .search-bar .search-and-submit button[type=submit] {
         border: 1px solid #363636;
         border-radius: 3px;
@@ -1490,17 +1491,17 @@ header.navigation {
         header.navigation .search-bar .search-and-submit button[type=submit]:disabled {
           opacity: 0.5;
           cursor: not-allowed; }
-        /* line 331, sass/modules/_header-navigation.scss */
+        /* line 333, sass/modules/_header-navigation.scss */
         header.navigation .search-bar .search-and-submit button[type=submit] img {
           height: 12px;
           opacity: .7; }
     @media screen and (min-width: 53.75em) {
-      /* line 296, sass/modules/_header-navigation.scss */
+      /* line 298, sass/modules/_header-navigation.scss */
       header.navigation .search-bar {
         width: 16em;
         position: relative;
         display: inline-block; }
-        /* line 343, sass/modules/_header-navigation.scss */
+        /* line 345, sass/modules/_header-navigation.scss */
         header.navigation .search-bar input {
           -webkit-box-sizing: border-box;
           -moz-box-sizing: border-box;
@@ -2062,6 +2063,405 @@ header.navigation {
           .hero .hero-inner .hero-copy p {
             font-size: 1.1em;
             max-width: 40%; } }
+
+/*--------------------------------------------------------------
+15.8 Slippry Slider
+--------------------------------------------------------------*/
+/**
+ * slippry v1.2.1 - Simple responsive content slider
+ * http://slippry.com
+ *
+ * Author(s): Lukas Jakob Hafner - @saftsaak
+ *            Thomas Hurd - @SeenNotHurd
+ *
+ * Copyright 2013, booncon oy - http://booncon.com
+ *
+ * Thanks @ http://bxslider.com for the inspiration!
+ *
+ * Released under the MIT license - http://opensource.org/licenses/MIT
+ */
+/* -------------------------- MIXINS ---------------------------------- */
+/* -------------------------- END MIXINS ---------------------------------- */
+/* kenBurns animations, very basic */
+@-webkit-keyframes left-right {
+  0% {
+    -webkit-transform: translateY(-20%) translateX(-10%);
+    -moz-transform: translateY(-20%) translateX(-10%);
+    -ms-transform: translateY(-20%) translateX(-10%);
+    -o-transform: translateY(-20%) translateX(-10%);
+    transform: translateY(-20%) translateX(-10%); }
+  100% {
+    -webkit-transform: translateY(0%) translateX(10%);
+    -moz-transform: translateY(0%) translateX(10%);
+    -ms-transform: translateY(0%) translateX(10%);
+    -o-transform: translateY(0%) translateX(10%);
+    transform: translateY(0%) translateX(10%); } }
+@-moz-keyframes left-right {
+  0% {
+    -webkit-transform: translateY(-20%) translateX(-10%);
+    -moz-transform: translateY(-20%) translateX(-10%);
+    -ms-transform: translateY(-20%) translateX(-10%);
+    -o-transform: translateY(-20%) translateX(-10%);
+    transform: translateY(-20%) translateX(-10%); }
+  100% {
+    -webkit-transform: translateY(0%) translateX(10%);
+    -moz-transform: translateY(0%) translateX(10%);
+    -ms-transform: translateY(0%) translateX(10%);
+    -o-transform: translateY(0%) translateX(10%);
+    transform: translateY(0%) translateX(10%); } }
+@-ms-keyframes left-right {
+  0% {
+    -webkit-transform: translateY(-20%) translateX(-10%);
+    -moz-transform: translateY(-20%) translateX(-10%);
+    -ms-transform: translateY(-20%) translateX(-10%);
+    -o-transform: translateY(-20%) translateX(-10%);
+    transform: translateY(-20%) translateX(-10%); }
+  100% {
+    -webkit-transform: translateY(0%) translateX(10%);
+    -moz-transform: translateY(0%) translateX(10%);
+    -ms-transform: translateY(0%) translateX(10%);
+    -o-transform: translateY(0%) translateX(10%);
+    transform: translateY(0%) translateX(10%); } }
+@keyframes left-right {
+  0% {
+    -webkit-transform: translateY(-20%) translateX(-10%);
+    -moz-transform: translateY(-20%) translateX(-10%);
+    -ms-transform: translateY(-20%) translateX(-10%);
+    -o-transform: translateY(-20%) translateX(-10%);
+    transform: translateY(-20%) translateX(-10%); }
+  100% {
+    -webkit-transform: translateY(0%) translateX(10%);
+    -moz-transform: translateY(0%) translateX(10%);
+    -ms-transform: translateY(0%) translateX(10%);
+    -o-transform: translateY(0%) translateX(10%);
+    transform: translateY(0%) translateX(10%); } }
+@-webkit-keyframes right-left {
+  0% {
+    -webkit-transform: translateY(0%) translateX(10%);
+    -moz-transform: translateY(0%) translateX(10%);
+    -ms-transform: translateY(0%) translateX(10%);
+    -o-transform: translateY(0%) translateX(10%);
+    transform: translateY(0%) translateX(10%); }
+  100% {
+    -webkit-transform: translateY(-20%) translateX(-10%);
+    -moz-transform: translateY(-20%) translateX(-10%);
+    -ms-transform: translateY(-20%) translateX(-10%);
+    -o-transform: translateY(-20%) translateX(-10%);
+    transform: translateY(-20%) translateX(-10%); } }
+@-moz-keyframes right-left {
+  0% {
+    -webkit-transform: translateY(0%) translateX(10%);
+    -moz-transform: translateY(0%) translateX(10%);
+    -ms-transform: translateY(0%) translateX(10%);
+    -o-transform: translateY(0%) translateX(10%);
+    transform: translateY(0%) translateX(10%); }
+  100% {
+    -webkit-transform: translateY(-20%) translateX(-10%);
+    -moz-transform: translateY(-20%) translateX(-10%);
+    -ms-transform: translateY(-20%) translateX(-10%);
+    -o-transform: translateY(-20%) translateX(-10%);
+    transform: translateY(-20%) translateX(-10%); } }
+@-ms-keyframes right-left {
+  0% {
+    -webkit-transform: translateY(0%) translateX(10%);
+    -moz-transform: translateY(0%) translateX(10%);
+    -ms-transform: translateY(0%) translateX(10%);
+    -o-transform: translateY(0%) translateX(10%);
+    transform: translateY(0%) translateX(10%); }
+  100% {
+    -webkit-transform: translateY(-20%) translateX(-10%);
+    -moz-transform: translateY(-20%) translateX(-10%);
+    -ms-transform: translateY(-20%) translateX(-10%);
+    -o-transform: translateY(-20%) translateX(-10%);
+    transform: translateY(-20%) translateX(-10%); } }
+@keyframes right-left {
+  0% {
+    -webkit-transform: translateY(0%) translateX(10%);
+    -moz-transform: translateY(0%) translateX(10%);
+    -ms-transform: translateY(0%) translateX(10%);
+    -o-transform: translateY(0%) translateX(10%);
+    transform: translateY(0%) translateX(10%); }
+  100% {
+    -webkit-transform: translateY(-20%) translateX(-10%);
+    -moz-transform: translateY(-20%) translateX(-10%);
+    -ms-transform: translateY(-20%) translateX(-10%);
+    -o-transform: translateY(-20%) translateX(-10%);
+    transform: translateY(-20%) translateX(-10%); } }
+/* added to the original element calling slippry */
+/* line 71, sass/modules/slippry.scss */
+.sy-box.sy-loading {
+  background: url(assets/img/sy-loader.gif) 50% 50% no-repeat;
+  background-size: 32px;
+  min-height: 40px; }
+  /* line 72, sass/modules/slippry.scss */
+  .sy-box.sy-loading .sy-slides-wrap, .sy-box.sy-loading .sy-pager {
+    visibility: hidden; }
+
+/* element that wraps the slides */
+/* line 81, sass/modules/slippry.scss */
+.sy-slides-wrap {
+  position: relative;
+  height: 100%;
+  width: 100%; }
+  /* line 86, sass/modules/slippry.scss */
+  .sy-slides-wrap:hover .sy-controls {
+    display: block; }
+
+/* element that crops the visible area to the slides */
+/* line 92, sass/modules/slippry.scss */
+.sy-slides-crop {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  overflow: hidden; }
+
+/* list containing the slides */
+/* line 99, sass/modules/slippry.scss */
+.sy-list {
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute; }
+  /* line 100, sass/modules/slippry.scss */
+  .sy-list.horizontal {
+    -webkit-transition: left ease;
+    -moz-transition: left ease;
+    transition: left ease; }
+  /* line 103, sass/modules/slippry.scss */
+  .sy-list.vertical {
+    -webkit-transition: top ease;
+    -moz-transition: top ease;
+    transition: top ease; }
+
+/* single slide */
+/* line 114, sass/modules/slippry.scss */
+.sy-slide {
+  position: absolute;
+  width: 100%;
+  z-index: 2; }
+  /* line 118, sass/modules/slippry.scss */
+  .sy-slide.kenburns {
+    width: 140%;
+    left: -20%; }
+    /* line 121, sass/modules/slippry.scss */
+    .sy-slide.kenburns.useCSS {
+      -webkit-transition-property: opacity;
+      -moz-transition-property: opacity;
+      transition-property: opacity; }
+      /* line 123, sass/modules/slippry.scss */
+      .sy-slide.kenburns.useCSS.sy-ken:nth-child(1n) {
+        -webkit-animation-name: left-right;
+        -webkit-animation-fill-mode: forwards;
+        -moz-animation-name: left-right;
+        -moz-animation-fill-mode: forwards;
+        -o-animation-name: left-right;
+        -o-animation-fill-mode: forwards;
+        animation-name: left-right;
+        animation-fill-mode: forwards; }
+      /* line 126, sass/modules/slippry.scss */
+      .sy-slide.kenburns.useCSS.sy-ken:nth-child(2n) {
+        -webkit-animation-name: right-left;
+        -webkit-animation-fill-mode: forwards;
+        -moz-animation-name: right-left;
+        -moz-animation-fill-mode: forwards;
+        -o-animation-name: right-left;
+        -o-animation-fill-mode: forwards;
+        animation-name: right-left;
+        animation-fill-mode: forwards; }
+  /* line 133, sass/modules/slippry.scss */
+  .sy-slide.sy-active {
+    z-index: 3; }
+  /* line 136, sass/modules/slippry.scss */
+  .sy-slide > a {
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 100%; }
+    /* line 141, sass/modules/slippry.scss */
+    .sy-slide > a > img {
+      margin: 0;
+      padding: 0;
+      display: block;
+      width: 100%;
+      border: 0; }
+
+/* next/ prev buttons, with arrows and clickable area a lot larger than the visible buttons */
+/* line 151, sass/modules/slippry.scss */
+.sy-controls {
+  display: none;
+  list-style: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  padding: 0;
+  margin: 0; }
+  /* line 159, sass/modules/slippry.scss */
+  .sy-controls li {
+    position: absolute;
+    width: 10%;
+    min-width: 4.2em;
+    height: 100%;
+    z-index: 33; }
+    /* line 165, sass/modules/slippry.scss */
+    .sy-controls li.sy-prev {
+      left: 0;
+      top: 0; }
+      /* line 169, sass/modules/slippry.scss */
+      .sy-controls li.sy-prev a:after {
+        background-position: -5% 0; }
+    /* line 174, sass/modules/slippry.scss */
+    .sy-controls li.sy-next {
+      right: 0;
+      top: 0; }
+      /* line 178, sass/modules/slippry.scss */
+      .sy-controls li.sy-next a:after {
+        background-position: 105% 0; }
+    /* line 183, sass/modules/slippry.scss */
+    .sy-controls li a {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: block;
+      text-indent: -9999px; }
+      /* line 189, sass/modules/slippry.scss */
+      .sy-controls li a:link, .sy-controls li a:visited {
+        opacity: 0.4; }
+      /* line 192, sass/modules/slippry.scss */
+      .sy-controls li a:hover, .sy-controls li a:focus {
+        opacity: 0.8;
+        outline: none; }
+      /* line 196, sass/modules/slippry.scss */
+      .sy-controls li a:after {
+        content: "";
+        background-image: url(assets/img/arrows.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        text-indent: 0;
+        line-height: 2.8em;
+        color: #111;
+        font-weight: 800;
+        position: absolute;
+        background-color: #fff;
+        width: 2.8em;
+        height: 2.8em;
+        left: 50%;
+        top: 50%;
+        margin-top: -1.4em;
+        margin-left: -1.4em;
+        background-clip: padding-box;
+        /* stops bg color from leaking outside the border: */
+        -webkit-border-radius: 50%;
+        border-radius: 50%; }
+  @media only screen and (max-device-width: 600px) {
+    /* line 151, sass/modules/slippry.scss */
+    .sy-controls {
+      display: block; }
+      /* line 221, sass/modules/slippry.scss */
+      .sy-controls li {
+        min-width: 2.1em; }
+        /* line 224, sass/modules/slippry.scss */
+        .sy-controls li a:after {
+          width: 1.4em;
+          height: 1.4em;
+          margin-top: -0.7em;
+          margin-left: -0.7em; } }
+
+/* captions, styled fo the overlay variant */
+/* line 235, sass/modules/slippry.scss */
+.sy-caption-wrap {
+  position: absolute;
+  bottom: 2em;
+  z-index: 12;
+  left: 50%; }
+  /* line 240, sass/modules/slippry.scss */
+  .sy-caption-wrap .sy-caption {
+    position: relative;
+    left: -50%;
+    background-color: rgba(0, 0, 0, 0.54);
+    color: #fff;
+    padding: 0.4em 1em; }
+    /* line 248, sass/modules/slippry.scss */
+    .sy-caption-wrap .sy-caption a:link, .sy-caption-wrap .sy-caption a:visited {
+      text-decoration: none; }
+    /* line 253, sass/modules/slippry.scss */
+    .sy-caption-wrap .sy-caption a:hover, .sy-caption-wrap .sy-caption a:focus {
+      text-decoration: underline; }
+  @media only screen and (max-device-width: 600px), screen and (max-width: 600px) {
+    /* line 235, sass/modules/slippry.scss */
+    .sy-caption-wrap {
+      left: 0;
+      bottom: 0.4em; }
+      /* line 261, sass/modules/slippry.scss */
+      .sy-caption-wrap .sy-caption {
+        left: 0;
+        padding: 0.2em 0.4em;
+        font-size: 0.92em;
+        background-clip: padding-box;
+        /* stops bg color from leaking outside the border: */
+        -webkit-border-radius: 0;
+        border-radius: 0; } }
+
+/* pager bubbles */
+/* line 270, sass/modules/slippry.scss */
+.sy-pager {
+  *zoom: 1;
+  display: block;
+  width: 100%;
+  margin: 1em 0 0;
+  padding: 0;
+  list-style: none;
+  text-align: center; }
+  /* line 17, sass/lib/bourbon/addons/_clearfix.scss */
+  .sy-pager:before, .sy-pager:after {
+    content: " ";
+    display: table; }
+  /* line 23, sass/lib/bourbon/addons/_clearfix.scss */
+  .sy-pager:after {
+    clear: both; }
+  /* line 278, sass/modules/slippry.scss */
+  .sy-pager li {
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    margin: 0 1em 0 0;
+    background-clip: padding-box;
+    /* stops bg color from leaking outside the border: */
+    -webkit-border-radius: 50%;
+    border-radius: 50%; }
+    /* line 285, sass/modules/slippry.scss */
+    .sy-pager li.sy-active a {
+      background-color: #e24b70; }
+    /* line 289, sass/modules/slippry.scss */
+    .sy-pager li a {
+      width: 100%;
+      height: 100%;
+      display: block;
+      background-color: #ccc;
+      text-indent: -9999px;
+      background-size: 2em;
+      background-clip: padding-box;
+      /* stops bg color from leaking outside the border: */
+      -webkit-border-radius: 50%;
+      border-radius: 50%; }
+      /* line 295, sass/modules/slippry.scss */
+      .sy-pager li a:link, .sy-pager li a:visited {
+        opacity: 1.0; }
+      /* line 298, sass/modules/slippry.scss */
+      .sy-pager li a:hover, .sy-pager li a:focus {
+        opacity: 0.6; }
+
+/* element to "keep/ fill" the space of the content, gets intrinsic height via js */
+/* line 307, sass/modules/slippry.scss */
+.sy-filler {
+  width: 100%; }
+  /* line 309, sass/modules/slippry.scss */
+  .sy-filler.ready {
+    -webkit-transition: padding 600ms ease;
+    -moz-transition: padding 600ms ease;
+    transition: padding 600ms ease; }
 
 /*--------------------------------------------------------------
 16.0 Typography

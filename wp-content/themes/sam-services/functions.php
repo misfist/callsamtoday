@@ -6,6 +6,12 @@
  */
 
 /**
+ * Enables checking if plugin is active
+ */
+
+include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
+
+/**
  * Set the content width based on the theme's design and stylesheet.
  */
 if ( ! isset( $content_width ) ) {
@@ -66,9 +72,9 @@ function sam_services_setup() {
 	 * Enable support for Post Formats.
 	 * See http://codex.wordpress.org/Post_Formats
 	 */
-	add_theme_support( 'post-formats', array(
-		'aside', 'image', 'video', 'quote', 'link',
-	) );
+	// add_theme_support( 'post-formats', array(
+	// 	'aside', 'image', 'video', 'quote', 'link',
+	// ) );
 
 	// Setup the WordPress core custom background feature.
 	// add_theme_support( 'custom-background', apply_filters( 'sam_services_custom_background_args', array(
@@ -181,6 +187,8 @@ function sam_services_scripts() {
 
 	wp_enqueue_style( 'sam-services-web-fonts', 'http://fonts.googleapis.com/css?family=Oswald:400,300,700|Open+Sans+Condensed:300,300italic,700|Open+Sans:400,700,700italic,400italic|Lato:400,400italic,700italic,700,300,300italic|family=Quattrocento:400,700');
 
+	wp_enqueue_script( 'sam-services-responsive-slider', get_template_directory_uri() . '/js/slippry/slippry.js', array(), '20141002', true );
+
 	// wp_enqueue_script( 'sam-services-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
 	// wp_enqueue_script( 'sam-services-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
@@ -220,3 +228,11 @@ require get_template_directory() . '/inc/jetpack.php';
  * Load custom functions.
  */
 require get_template_directory() . '/inc/custom-functions.php';
+
+/**
+ * If plugin is active load custom fields function
+ */
+if(is_plugin_active('advanced-custom-fields/acf.php')) {
+	include_once('advanced-custom-fields/acf.php');
+	require get_template_directory() . '/inc/custom-fields.php';
+}

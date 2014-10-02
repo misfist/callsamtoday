@@ -21,7 +21,6 @@ get_header(); ?>
 		<?php 
 		$cat = get_category_by_slug( 'testimonials' );
 		$cat_id = $cat->term_id;
-		echo $cat_id;
 		?>
 
 		<?php

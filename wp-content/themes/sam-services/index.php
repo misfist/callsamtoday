@@ -21,11 +21,12 @@ get_header(); ?>
 		<?php 
 		$cat = get_category_by_slug( 'testimonials' );
 		$cat_id = $cat->term_id;
+		echo $cat_id;
 		?>
 
 		<?php
 		// Don't include posts categorized as 'testimonials'
-		$args = array( 'category__not_in' => $cat_id); ?>
+		$args = array( 'category' => -$cat_id); ?>
 
 		<?php $postlist = get_posts( $args ); ?>
 

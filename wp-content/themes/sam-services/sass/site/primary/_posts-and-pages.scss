@@ -27,13 +27,17 @@
 	margin: 0 0 1.5em;
 }
 
-h1.entry-title {
+h1.entry-title,
+h1.page-title {
 	padding-top: .5em;
 }
 
 #primary {
 	background: $white;
 }
-main#main > article {
-	background: transparent;
+
+.comments-link,
+.edit-link,
+.tags-links {
+	display: block;
 }

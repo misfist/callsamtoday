@@ -92,16 +92,6 @@ cite {
   }
 }
 
-.recent-posts-extended {
-  h1 {
-    font-size: $h4-font-size;
-  }  
-  h3 {
-    display: none;
-  }
-}
-
-
 blockquote {
   background: darken($white, 5%);
   border-left: 10px solid $blue;
@@ -124,3 +114,18 @@ blockquote {
   }
 }
 
+.recent-posts-extended {
+  h1 {
+    font-size: $h4-font-size;
+  }  
+  h3 {
+    display: none;
+  }
+}
+
+.entry-meta,
+.cat-links,
+.tags-links {
+  font-style: italic;
+  color: $medium-gray;
+}

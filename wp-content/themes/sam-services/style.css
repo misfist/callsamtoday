@@ -742,20 +742,13 @@ cite {
   cite:before {
     content: "\2014 \00A0"; }
 
-/* line 96, sass/lib/base/_typography.scss */
-.recent-posts-extended h1 {
-  font-size: 2.4rem; }
-/* line 99, sass/lib/base/_typography.scss */
-.recent-posts-extended h3 {
-  display: none; }
-
-/* line 105, sass/lib/base/_typography.scss */
+/* line 95, sass/lib/base/_typography.scss */
 blockquote {
   background: #f2f2f2;
   border-left: 10px solid #477DCA;
   padding: 0.5em 10px;
   quotes: "“" "”" "“" "”"; }
-  /* line 110, sass/lib/base/_typography.scss */
+  /* line 100, sass/lib/base/_typography.scss */
   blockquote:before {
     color: #999;
     content: open-quote;
@@ -763,13 +756,27 @@ blockquote {
     line-height: 0.1em;
     margin-right: 0.25em;
     vertical-align: -0.4em; }
-  /* line 118, sass/lib/base/_typography.scss */
+  /* line 108, sass/lib/base/_typography.scss */
   blockquote p {
     display: inline; }
-  /* line 121, sass/lib/base/_typography.scss */
+  /* line 111, sass/lib/base/_typography.scss */
   blockquote cite {
     display: block;
     text-align: right; }
+
+/* line 118, sass/lib/base/_typography.scss */
+.recent-posts-extended h1 {
+  font-size: 2.4rem; }
+/* line 121, sass/lib/base/_typography.scss */
+.recent-posts-extended h3 {
+  display: none; }
+
+/* line 126, sass/lib/base/_typography.scss */
+.entry-meta,
+.cat-links,
+.tags-links {
+  font-style: italic;
+  color: #999; }
 
 /* line 1, sass/lib/base/_forms.scss */
 fieldset {
@@ -1075,16 +1082,19 @@ footer.footer .copyleft img {
   margin: 0 0 1.5em; }
 
 /* line 30, sass/site/primary/_posts-and-pages.scss */
-h1.entry-title {
+h1.entry-title,
+h1.page-title {
   padding-top: .5em; }
 
-/* line 34, sass/site/primary/_posts-and-pages.scss */
+/* line 35, sass/site/primary/_posts-and-pages.scss */
 #primary {
   background: #fff; }
 
-/* line 37, sass/site/primary/_posts-and-pages.scss */
-main#main > article {
-  background: transparent; }
+/* line 39, sass/site/primary/_posts-and-pages.scss */
+.comments-link,
+.edit-link,
+.tags-links {
+  display: block; }
 
 /*--------------------------------------------------------------
 10.3 Asides
@@ -1442,10 +1452,14 @@ header.navigation {
   header.navigation .search-bar {
     padding: .85em .6em;
     float: left; }
-    /* line 305, sass/modules/_header-navigation.scss */
+    /* line 303, sass/modules/_header-navigation.scss */
+    header.navigation .search-bar h6 {
+      color: #fff;
+      padding-top: .3em; }
+    /* line 310, sass/modules/_header-navigation.scss */
     header.navigation .search-bar .search-and-submit {
       position: relative; }
-      /* line 308, sass/modules/_header-navigation.scss */
+      /* line 313, sass/modules/_header-navigation.scss */
       header.navigation .search-bar .search-and-submit input[type=search] {
         background: #404040;
         border: 1px solid #262626;
@@ -1456,10 +1470,10 @@ header.navigation {
         border-radius: 6px;
         margin: 0; }
         @media screen and (min-width: 53.75em) {
-          /* line 308, sass/modules/_header-navigation.scss */
+          /* line 313, sass/modules/_header-navigation.scss */
           header.navigation .search-bar .search-and-submit input[type=search] {
             width: 100%; } }
-      /* line 323, sass/modules/_header-navigation.scss */
+      /* line 328, sass/modules/_header-navigation.scss */
       header.navigation .search-bar .search-and-submit button[type=submit] {
         border: 1px solid #363636;
         border-radius: 3px;
@@ -1499,7 +1513,7 @@ header.navigation {
         header.navigation .search-bar .search-and-submit button[type=submit]:disabled {
           opacity: 0.5;
           cursor: not-allowed; }
-        /* line 333, sass/modules/_header-navigation.scss */
+        /* line 338, sass/modules/_header-navigation.scss */
         header.navigation .search-bar .search-and-submit button[type=submit] img {
           height: 12px;
           opacity: .7; }
@@ -1509,7 +1523,7 @@ header.navigation {
         width: 16em;
         position: relative;
         display: inline-block; }
-        /* line 345, sass/modules/_header-navigation.scss */
+        /* line 350, sass/modules/_header-navigation.scss */
         header.navigation .search-bar input {
           -webkit-box-sizing: border-box;
           -moz-box-sizing: border-box;

@@ -174,6 +174,16 @@ function sam_services_widgets_init() {
 		'after_widget'  => '</div>'
 	));
 
+	register_sidebar( array(
+		'name'          => __( 'Header', 'sam-services' ),
+		'description'   => __( 'Header widget', 'sam-services' ),
+		'id'            => 'header-widget',
+		'before_title'  => '<h6>',
+		'after_title'   => '</h6>',
+		'before_widget' => '<div class="search-bar">',
+		'after_widget'  => '</div>'
+	));
+
 }
 add_action( 'widgets_init', 'sam_services_widgets_init' );
 

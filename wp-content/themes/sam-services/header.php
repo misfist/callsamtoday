@@ -83,6 +83,8 @@
 			?>
 
 			<div class="navigation-tools">
+				<?php dynamic_sidebar( 'header-widget' ); ?>
+
 			<!--  <div class="search-bar">
 			<div class="search-and-submit">
 			<input type="search" placeholder="Enter Search" />

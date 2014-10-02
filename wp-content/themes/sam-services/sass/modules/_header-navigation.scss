@@ -300,6 +300,11 @@ header.navigation {
     $search-bar-border: 1px solid $search-bar-border-color;
     $search-bar-background: lighten($search-bar-border-color, 10);
 
+    h6 {
+      color: $white;
+      padding-top: .3em;
+    }
+
     padding: .85em .6em; 
     float: left;
     .search-and-submit {

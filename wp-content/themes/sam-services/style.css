@@ -2087,7 +2087,276 @@ header.navigation {
             max-width: 40%; } }
 
 /*--------------------------------------------------------------
-15.8 Slippry Slider
+15.8 Cyclone Slider
+--------------------------------------------------------------*/
+/* line 1, sass/modules/_cyclone-slider.scss */
+.cycloneslider {
+  position: relative;
+  margin-bottom: 30px;
+  outline: none;
+  /*** Prev/Next ***/
+  /*** Pager ***/
+  /*** Caption ***/ }
+  /* line 5, sass/modules/_cyclone-slider.scss */
+  .cycloneslider .cycloneslider-slides {
+    position: relative;
+    overflow: hidden; }
+  /* line 9, sass/modules/_cyclone-slider.scss */
+  .cycloneslider .cycloneslider-slide {
+    text-align: center;
+    width: 100%;
+    /* For slides in scrollHorz to work */
+    display: none;
+    /* Hide slides to prevent FOUC when JS hasn't kicked in yet */
+    background: #fff;
+    /* Add background to prevent slides from peeking behind the current slide when fx=scrollHorz and hideNonActive=false */ }
+    /* line 14, sass/modules/_cyclone-slider.scss */
+    .cycloneslider .cycloneslider-slide img {
+      display: block;
+      margin: 0 auto;
+      padding: 0;
+      max-width: 100%;
+      border: 0; }
+    /* line 21, sass/modules/_cyclone-slider.scss */
+    .cycloneslider .cycloneslider-slide embed,
+    .cycloneslider .cycloneslider-slide iframe,
+    .cycloneslider .cycloneslider-slide object {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100% !important;
+      /* Override width attrib */
+      height: 100% !important;
+      /* Override height attrib */ }
+  /* line 31, sass/modules/_cyclone-slider.scss */
+  .cycloneslider .cycle-slide {
+    display: block;
+    /* Show slide so that getBoundingClientRect().height will not return 0. Class .cycle-slide is added when cycle has initialized. */ }
+  /* line 34, sass/modules/_cyclone-slider.scss */
+  .cycloneslider div[data-cycle-dynamic-height="off"] .cycloneslider-slide-image {
+    height: 100%;
+    /* To prevent cutting off captions when dynamic height is off */ }
+  /* line 37, sass/modules/_cyclone-slider.scss */
+  .cycloneslider div[data-cycle-dynamic-height="on"] .cycloneslider-slide-custom,
+  .cycloneslider div[data-cycle-dynamic-height="on"] .cycle-sentinel + .cycloneslider-slide-testimonial {
+    min-height: 100px; }
+  /* line 41, sass/modules/_cyclone-slider.scss */
+  .cycloneslider .cycloneslider-slide:first-child,
+  .cycloneslider .cycle-sentinel + .cycloneslider-slide {
+    /* Select next slide when using sentinel slide */
+    display: block; }
+  /* line 45, sass/modules/_cyclone-slider.scss */
+  .cycloneslider.cycloneslider-width-full .cycloneslider-slide img {
+    width: 100%; }
+  /* line 48, sass/modules/_cyclone-slider.scss */
+  .cycloneslider .cycloneslider-slide-youtube,
+  .cycloneslider .cycloneslider-slide-vimeo {
+    background: #222222; }
+  /* line 52, sass/modules/_cyclone-slider.scss */
+  .cycloneslider .cycloneslider-slide-custom,
+  .cycloneslider .cycloneslider-slide-testimonial {
+    min-height: 100%; }
+  /* line 56, sass/modules/_cyclone-slider.scss */
+  .cycloneslider .cycloneslider-slide-testimonial {
+    font-style: italic; }
+    /* line 58, sass/modules/_cyclone-slider.scss */
+    .cycloneslider .cycloneslider-slide-testimonial blockquote {
+      margin-bottom: 0; }
+    /* line 61, sass/modules/_cyclone-slider.scss */
+    .cycloneslider .cycloneslider-slide-testimonial .cycloneslider-testimonial-author {
+      text-align: right;
+      font-style: normal; }
+      /* line 64, sass/modules/_cyclone-slider.scss */
+      .cycloneslider .cycloneslider-slide-testimonial .cycloneslider-testimonial-author a {
+        text-decoration: none; }
+  /* line 71, sass/modules/_cyclone-slider.scss */
+  .cycloneslider .cycloneslider-prev,
+  .cycloneslider .cycloneslider-next,
+  .cycloneslider .cycloneslider-pager span {
+    cursor: pointer; }
+  /* line 76, sass/modules/_cyclone-slider.scss */
+  .cycloneslider .cycloneslider-prev,
+  .cycloneslider .cycloneslider-next {
+    position: absolute;
+    top: 50%;
+    z-index: 501;
+    display: block;
+    margin-top: -15px;
+    width: 30px;
+    height: 30px;
+    background: #222222;
+    opacity: 0.8 !important;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    border-radius: 0 !important;
+    box-shadow: none !important; }
+    @media (max-width: 480px) {
+      /* line 76, sass/modules/_cyclone-slider.scss */
+      .cycloneslider .cycloneslider-prev,
+      .cycloneslider .cycloneslider-next {
+        display: none !important; } }
+  /* line 99, sass/modules/_cyclone-slider.scss */
+  .cycloneslider:hover {
+    opacity: 1; }
+  /* line 102, sass/modules/_cyclone-slider.scss */
+  .cycloneslider.disabled {
+    display: none; }
+  /* line 105, sass/modules/_cyclone-slider.scss */
+  .cycloneslider .cycloneslider-prev {
+    left: 0; }
+    /* line 107, sass/modules/_cyclone-slider.scss */
+    .cycloneslider .cycloneslider-prev .arrow {
+      margin-left: -4px;
+      border-top: 6px solid transparent;
+      border-right: 6px solid #fff;
+      border-bottom: 6px solid transparent; }
+  /* line 114, sass/modules/_cyclone-slider.scss */
+  .cycloneslider .cycloneslider-next {
+    right: 0; }
+    /* line 116, sass/modules/_cyclone-slider.scss */
+    .cycloneslider .cycloneslider-next .arrow {
+      margin-left: -2px;
+      border-top: 6px solid transparent;
+      border-left: 6px solid #fff;
+      border-bottom: 6px solid transparent; }
+  /* line 123, sass/modules/_cyclone-slider.scss */
+  .cycloneslider .arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -6px;
+    width: 0;
+    height: 0; }
+  /* line 133, sass/modules/_cyclone-slider.scss */
+  .cycloneslider .cycloneslider-pager {
+    position: absolute;
+    bottom: -22px;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 12px;
+    text-align: center; }
+    /* line 141, sass/modules/_cyclone-slider.scss */
+    .cycloneslider .cycloneslider-pager span {
+      display: inline-block;
+      margin: 0 4px;
+      width: 12px;
+      height: 12px;
+      background: #333;
+      vertical-align: top;
+      font-size: 0;
+      line-height: 0;
+      -webkit-box-shadow: 1px 1px 2px 0px #000;
+      box-shadow: 1px 1px 2px 0px #000; }
+      /* line 152, sass/modules/_cyclone-slider.scss */
+      .cycloneslider .cycloneslider-pager span .cycle-pager-active {
+        background-color: #ccc; }
+  /* line 159, sass/modules/_cyclone-slider.scss */
+  .cycloneslider .cycloneslider-caption {
+    position: absolute;
+    top: 0;
+    right: 0 !important;
+    left: auto !important;
+    z-index: 500;
+    max-width: 80% !important;
+    margin: 15% 30px;
+    background: transparent !important;
+    text-align: right; }
+    /* line 171, sass/modules/_cyclone-slider.scss */
+    .cycloneslider .cycloneslider-caption .cycloneslider-caption-title,
+    .cycloneslider .cycloneslider-caption .cycloneslider-caption-description,
+    .cycloneslider .cycloneslider-caption .cycloneslider-caption-more {
+      float: right;
+      clear: both;
+      padding: 10px;
+      margin-bottom: 1px;
+      background: #fff;
+      opacity: 0.7 !important;
+      color: #222222; }
+    /* line 184, sass/modules/_cyclone-slider.scss */
+    .cycloneslider .cycloneslider-caption .cycloneslider-caption-title {
+      font-size: 3.2rem;
+      line-height: 1.2; }
+      @media (max-width: 480px) {
+        /* line 184, sass/modules/_cyclone-slider.scss */
+        .cycloneslider .cycloneslider-caption .cycloneslider-caption-title {
+          font-size: 2.8rem; } }
+    /* line 193, sass/modules/_cyclone-slider.scss */
+    .cycloneslider .cycloneslider-caption .cycloneslider-caption-description {
+      font-size: 1.6rem;
+      line-height: 1.5; }
+      @media (max-width: 960px) {
+        /* line 193, sass/modules/_cyclone-slider.scss */
+        .cycloneslider .cycloneslider-caption .cycloneslider-caption-description {
+          font-size: 1.5rem; } }
+      @media (max-width: 480px) {
+        /* line 193, sass/modules/_cyclone-slider.scss */
+        .cycloneslider .cycloneslider-caption .cycloneslider-caption-description {
+          font-size: 1.4rem; } }
+    /* line 203, sass/modules/_cyclone-slider.scss */
+    .cycloneslider .cycloneslider-caption .cycloneslider-caption-more {
+      font-size: 1.2rem;
+      text-decoration: none;
+      text-transform: uppercase;
+      line-height: 1.5; }
+      /* line 210, sass/modules/_cyclone-slider.scss */
+      .cycloneslider .cycloneslider-caption .cycloneslider-caption-more:hover {
+        color: #477DCA; }
+
+/* line 220, sass/modules/_cyclone-slider.scss */
+.rtl .cycloneslider .cycloneslider-prev {
+  left: auto;
+  right: 0; }
+  /* line 223, sass/modules/_cyclone-slider.scss */
+  .rtl .cycloneslider .cycloneslider-prev .arrow {
+    margin-left: -2px;
+    border: 0;
+    border-top: 6px solid transparent;
+    border-left: 6px solid #fff;
+    border-bottom: 6px solid transparent; }
+/* line 231, sass/modules/_cyclone-slider.scss */
+.rtl .cycloneslider .cycloneslider-next {
+  right: auto;
+  left: 0; }
+  /* line 234, sass/modules/_cyclone-slider.scss */
+  .rtl .cycloneslider .cycloneslider-next .arrow {
+    margin-left: -4px;
+    border: 0;
+    border-top: 6px solid transparent;
+    border-right: 6px solid #fff;
+    border-bottom: 6px solid transparent; }
+/* line 242, sass/modules/_cyclone-slider.scss */
+.rtl .cycloneslider .cycloneslider-caption {
+  text-align: right;
+  left: auto;
+  right: 0; }
+  /* line 246, sass/modules/_cyclone-slider.scss */
+  .rtl .cycloneslider .cycloneslider-caption .cycloneslider-caption-title,
+  .rtl .cycloneslider .cycloneslider-caption .cycloneslider-caption-description,
+  .rtl .cycloneslider .cycloneslider-caption .cycloneslider-caption-more {
+    float: right; }
+
+/* line 254, sass/modules/_cyclone-slider.scss */
+.ie7 .cycloneslider .cycloneslider-pager span {
+  zoom: 1;
+  /* IE 7 inline-block */
+  *display: inline;
+  /* IE 7 inline-block */ }
+
+/*** Responsive ***/
+@media (max-width: 960px) {
+  /* line 261, sass/modules/_cyclone-slider.scss */
+  .cycloneslider .cycloneslider-caption {
+    max-width: 100%; } }
+@media (max-width: 480px) {
+  /* line 266, sass/modules/_cyclone-slider.scss */
+  .cycloneslider.cycloneslider-caption {
+    display: none; } }
+/*--------------------------------------------------------------
+15.9 Slippry Slider
 --------------------------------------------------------------*/
 /**
  * slippry v1.2.1 - Simple responsive content slider

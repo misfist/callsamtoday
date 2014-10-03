@@ -20,6 +20,28 @@ $h3-font-size: $base-font-size * 1.75;
 $h4-font-size: $base-font-size * 1.5;
 $h5-font-size: $base-font-size * 1.25;
 $h6-font-size: $base-font-size;
+$caption-size: 1.4rem;
+$small-size: 1.2rem;
+$body-size: $base-font-size;
+
+// TYPE SIZES
+// http://typecast.com/blog/a-more-modern-scale-for-web-typography
+
+$h1-font-size-m: $h1-font-size - .1;
+$h2-font-size-m: $h2-font-size - .1;
+$h3-font-size-m: $h3-font-size - .1;
+$h4-font-size-m: $h4-font-size - .1;
+$body-size-m: $body-size - .1;
+$caption-size-m: $caption-size - .1;
+$small-size-m: $small-size - .1;
+
+$h1-font-size-s: $h1-font-size - .2;
+$h2-font-size-s: $h2-font-size - .2;
+$h3-font-size-s: $h3-font-size - .2;
+$h4-font-size-s: $h4-font-size - .2;
+$body-size-s: $body-size - .2;
+$caption-size-s: $caption-size - .2;
+$small-size-s: $small-size - .2;
 
 // Line height
 $base-line-height: 1.5;

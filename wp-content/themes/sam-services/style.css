@@ -1846,8 +1846,8 @@ header.navigation {
 --------------------------------------------------------------*/
 /* line 3, sass/modules/_intro-text.scss */
 .intro-text {
-  margin-bottom: 5em;
-  margin-top: 4em;
+  margin-bottom: 1em;
+  margin-top: 1em;
   text-align: center; }
   /* line 10, sass/modules/_intro-text.scss */
   .intro-text h1 {

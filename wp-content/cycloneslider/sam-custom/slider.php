@@ -60,8 +60,8 @@
                     
                     <?php if(!empty($slide['title']) or !empty($slide['description'])) : ?>
                         <div class="cycloneslider-caption">
-                            <div class="cycloneslider-caption-title"><?php echo wp_kses_post( $slide['title'] );?></div>
-                            <div class="cycloneslider-caption-description"><?php echo wp_kses_post( $slide['description'] );?></div>
+                            <h2 class="cycloneslider-caption-title"><?php echo wp_kses_post( $slide['title'] );?></h2>
+                            <h3 class="cycloneslider-caption-description"><?php echo wp_kses_post( $slide['description'] );?></h3>
                             <?php if( 'lightbox' == $slide['link_target'] ): ?>
                                 <a class="cycloneslider-caption-more magnific-pop" href="<?php echo esc_url( $slide['full_image_url'] ); ?>" alt="<?php echo $slide['img_alt'];?>"><?php _e('View Larger Image', 'cycloneslider'); ?></a>
                             <?php elseif ( '' != $slide['link'] ) : ?>

@@ -120,15 +120,6 @@ blockquote {
   }
 }
 
-.recent-posts-extended {
-  h1 {
-    font-size: $h4-font-size;
-  }  
-  h3 {
-    display: none;
-  }
-}
-
 .entry-meta,
 .cat-links,
 .tags-links {
@@ -136,10 +127,9 @@ blockquote {
   color: $medium-gray;
 }
 
+
 article.post,
 article.page {
-  // $sans-serif: 'PT Sans', sans-serif;
-  // $sans-serif-2: 'Titillium Web', sans-serif;
 
   @include clearfix;
   text-align: left;
@@ -158,17 +148,14 @@ article.page {
   }
 
   h1 {
-    font-family: $sans-serif;
-    font-size: 2em;
-    font-weight: 600;
-    margin-bottom: .6em;
 
     @media (max-width: $medium-screen)  {
       font-size: 2.4em;
     }
   }
 
-  h2,
+  h2 { }
+
   p:first-child {
     font-family: $sans-serif;
     font-size: 1.2em;
@@ -190,15 +177,6 @@ article.page {
     padding: .1em .4em;
     font-size: .65em;
     font-style: normal;
-  }
-
-  h3 {
-   font-family: $sans-serif;
-   font-size: 1em;
-   font-weight: 700;
-   text-transform: uppercase;
-   line-height: 1.4em;
-   margin-bottom: .5em; 
   }
 
   p.date {
@@ -247,5 +225,28 @@ article.page {
   .byline {
     font-family: $sans-serif;
     font-style: italic;
+  }
+}
+
+.blog {
+  article.post {
+    p,
+    p:first-child {
+      font-family: $sans-serif;
+      font-weight: 300;
+      font-size: $base-font-size;
+      letter-spacing: 1;
+      margin-bottom: 1.5em;
+    }
+  }
+} 
+
+
+.recent-posts-extended {
+  h1 {
+    font-size: $h4-font-size;
+  }  
+  h3 {
+    display: none;
   }
 }

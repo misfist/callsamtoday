@@ -41,3 +41,85 @@ h1.page-title {
 .tags-links {
 	display: block;
 }
+
+// Home Page
+.home {
+	#home-text {
+		color: $white;
+		h2,
+		h3,
+		p {
+			color: $white;
+		}
+		h2 {
+			font-size: $h2-font-size;
+			margin-bottom: .5em;
+			margin-top: .5em;
+		}
+		h3 {
+			text-transform: none;
+			font-size: $h4-font-size;
+			font-weight: normal;
+		}
+		p {
+			font-size: $h5-font-size;
+		}
+		a {
+			@extend button;
+			background: $dark-gray;
+		}
+		p + p {
+			margin-top: .5em !important;
+			margin-bottom: .5em !important;
+			padding-top: 0;
+			padding-bottom: 0;
+		}
+		br + a,
+		p a {
+			margin-top: 1em;
+		}
+	}
+}
+
+.not-home,
+.blog {
+	article {
+		h1 {
+			color: $blue;
+			font-weight: normal;
+		}
+		h2 {}
+		p {}
+		ul {
+			margin-bottom: 1em;
+			li {
+				border-left: 8px solid $light-green;
+				margin-left: 1em;
+				padding-left: .5em;
+				margin-bottom: .25em;
+				li {
+					border-left: 8px solid $light-yellow;
+					li {
+						border-left: 8px solid $blue;
+						li {
+							border-left: 8px solid $light-green;
+						}
+					}
+				}
+			}
+		}
+		a,
+		a:link {
+			border-bottom: 2px solid $light-gray;
+		}
+		a:hover,
+		a:focus {
+			color: $dark-gray;
+			background-color: $light-gray;
+			border-bottom: 2px solid $blue;
+
+		}
+	}	
+}
+
+

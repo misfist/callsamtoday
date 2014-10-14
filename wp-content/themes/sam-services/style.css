@@ -2055,6 +2055,9 @@ header.navigation {
     /* line 81, sass/modules/_intro-text.scss */
     .intro-text p + p {
       padding-top: 2em; }
+  /* line 86, sass/modules/_intro-text.scss */
+  .intro-text strong {
+    font-weight: bold; }
 
 /*--------------------------------------------------------------
 15.5 Side Image

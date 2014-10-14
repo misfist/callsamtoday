@@ -14,40 +14,35 @@
 	}
 }
 
-.page-template-content-sidebar-page-php,
-.blog,
-.archive,
-.category {
+.not-home {
 	#content {
 		#primary {
-			@include span-columns(8);
+			@include span-columns(12);
+			padding-left: 2%;
+
+			@include breakpoint(large) {
+				@include span-columns(8);
+				padding-left: 0;
+			}
 		}
 		#secondary {
-			@include span-columns(4);
+			display: none;
+			
+			@include breakpoint(large) {
+				@include span-columns(4);
+				@include omega();
+			}
+
 		}		
-		@include media($mobile) {
-			#primary {
-				@include span-columns(12);
-			}
-			#secondary {
-				display: none;
-			}
-		}
-		@include media($tablet) {
-			#primary {
-				@include span-columns(12);
-			}
-			#secondary {
-				display: none;
-			}
-		}
 	}
 }
 
-@include media($tablet) {
-	.intro-text {
-		padding-top: 0;
-		margin-top: 0;
+.about-us,
+.our-clients {
+	#content {
+		#primary {
+			@include span-columns(12);
+		}
 	}
 }
 
@@ -85,7 +80,6 @@
 		padding-left: 2%;
 	}
 }
-
 
 footer.footer .copyleft {
 	height: 30px;

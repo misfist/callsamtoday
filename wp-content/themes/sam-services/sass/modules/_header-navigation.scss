@@ -130,8 +130,8 @@ header.navigation {
 
   .active-nav-item a,
   .current-menu-item a {
-    border-bottom: 1px solid $navigation-active-link-color;
-    padding-bottom: 3px;
+    color: $white;
+    font-weight: 700;
   }
 
   // Sub menus

@@ -1,32 +1,11 @@
-// .cycloneslider-caption 
-// .cycloneslider-caption-title
-// .cycloneslider-caption-description
-// .cycloneslider-caption-more
 
-// $tiny: new-breakpoint(max-width $tinyscreen);
-// $small: new-breakpoint(min-width $smallscreen);
-// $medium: new-breakpoint(min-width $smallscreen + 1 max-width $mediumscreen);
-// $large: new-breakpoint(min-width $largescreen);
-// $xlarge: new-breakpoint(min-width $xlargescreen);
-
-// @include breakpoint(small) {
-// 	#cycloneslider-home-slide-1 {
-// 		display: none;
-// 	}
-// }
-
-#cycloneslider-home-slide-1 {
+#cycloneslider-home-slide-1,
+.cycloneslider {
 	@include breakpoint(small) { 
 		display: none;
 	}
 	
 }
-
-// .cycloneslider .cycloneslider-caption
-// .cycloneslider .cycloneslider-caption
-
-// @include breakpoint(tiny) {}
-// @include breakpoint(small) {}
 
 .cycloneslider {
 	.cycloneslider-caption {

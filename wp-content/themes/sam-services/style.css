@@ -2367,32 +2367,33 @@ header.navigation {
 15.8 Cyclone Slider
 --------------------------------------------------------------*/
 @media (max-width: 768px) {
-  /* line 18, sass/modules/_cyclone-slider.scss */
-  #cycloneslider-home-slide-1 {
+  /* line 2, sass/modules/_cyclone-slider.scss */
+  #cycloneslider-home-slide-1,
+  .cycloneslider {
     display: none; } }
 
 @media (min-width: 769px) {
-  /* line 32, sass/modules/_cyclone-slider.scss */
+  /* line 11, sass/modules/_cyclone-slider.scss */
   .cycloneslider .cycloneslider-caption {
     right: auto !important;
     left: auto !important;
     text-align: center;
     margin-right: 0; }
-    /* line 38, sass/modules/_cyclone-slider.scss */
+    /* line 17, sass/modules/_cyclone-slider.scss */
     .cycloneslider .cycloneslider-caption h2.cycloneslider-caption-title {
       font-size: 3rem;
       text-align: center; }
-    /* line 42, sass/modules/_cyclone-slider.scss */
+    /* line 21, sass/modules/_cyclone-slider.scss */
     .cycloneslider .cycloneslider-caption h3.cycloneslider-caption-description {
       display: none; }
-    /* line 45, sass/modules/_cyclone-slider.scss */
+    /* line 24, sass/modules/_cyclone-slider.scss */
     .cycloneslider .cycloneslider-caption .cycloneslider-caption-more {
       text-align: center; } }
 @media (min-width: 1020px) {
-  /* line 50, sass/modules/_cyclone-slider.scss */
+  /* line 29, sass/modules/_cyclone-slider.scss */
   .cycloneslider .cycloneslider-caption h2.cycloneslider-caption-title {
     font-size: inherit; }
-  /* line 53, sass/modules/_cyclone-slider.scss */
+  /* line 32, sass/modules/_cyclone-slider.scss */
   .cycloneslider .cycloneslider-caption h3.cycloneslider-caption-description {
     display: inherit; } }
 

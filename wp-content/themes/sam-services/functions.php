@@ -243,6 +243,7 @@ require get_template_directory() . '/inc/custom-functions.php';
  * If plugin is active load custom fields function
  */
 if(is_plugin_active('advanced-custom-fields/acf.php')) {
-	include_once('advanced-custom-fields/acf.php');
 	require get_template_directory() . '/inc/custom-fields.php';
 }
+
+?>

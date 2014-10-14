@@ -21,13 +21,5 @@ add_filter('body_class','sam_network_class_names');
 
 // remove_filter( 'the_content', 'wpautop' );
 
-/************* Add .not-home to Body Class of All Pages Except Home *****************/
-
-// function sam_not_home_class($classes) {
-//     global $post;
-//     if(!is_front_page()) $classes [] = 'not-home';
-//     return $classes;
-//     }
-// add_filter('body_class', 'sam_not_home_class');
 
 ?>

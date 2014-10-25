@@ -9,6 +9,8 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class('intro-text'); ?>>
 	<div class="intro-text">
 
+		<div id="home-text">
+
 		<?php the_content(); ?>
 		<?php
 			wp_link_pages( array(
@@ -16,6 +18,8 @@
 				'after'  => '</div>',
 			) );
 		?>
+
+		</div>
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">

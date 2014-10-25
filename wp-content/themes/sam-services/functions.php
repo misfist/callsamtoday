@@ -199,6 +199,8 @@ function sam_services_scripts() {
 
 	wp_enqueue_script( 'sam-services-responsive-slider', get_template_directory_uri() . '/js/slippry/slippry.js', array(), '20141002', true );
 
+	wp_enqueue_style( 'sam-services-responsive-slider-styles', get_template_directory_uri() . '/js/slippry/slippry.css');
+
 	// wp_enqueue_script( 'sam-services-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
 	// wp_enqueue_script( 'sam-services-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
@@ -243,7 +245,7 @@ require get_template_directory() . '/inc/custom-functions.php';
  * If plugin is active load custom fields function
  */
 if(is_plugin_active('advanced-custom-fields/acf.php')) {
-	require get_template_directory() . '/inc/custom-fields.php';
+	// require get_template_directory() . '/inc/custom-fields.php';
 }
 
 ?>

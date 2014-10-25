@@ -17,7 +17,12 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 			<!-- Slider -->
-			<?php sam_get_slides(); ?>
+
+			<?php if(function_exists('sam_get_slides')) { ?>
+
+				<?php sam_get_slides(); ?>
+
+			<?php } ?>
 
 		<?php while ( have_posts() ) : the_post(); ?>
 

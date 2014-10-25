@@ -14,31 +14,29 @@
 	}
 }
 
-// .not-home {
-// 	#content {
-// 		#primary {
-// 			@include span-columns(12);
-// 			padding-left: 2%;
+.not-home {
+	#content {
+		#primary {
+			@include span-columns(12);
+			padding-left: 2%;
 
-// 			@include breakpoint(large) {
-// 				@include span-columns(8);
-// 				padding-left: 0;
-// 			}
-// 		}
-// 		#secondary {
-// 			display: none;
+			@include breakpoint(large) {
+				@include span-columns(8);
+				padding-left: 0;
+			}
+		}
+		#secondary {
+			display: none;
 			
-// 			@include breakpoint(large) {
-// 				@include span-columns(4);
-// 				@include omega();
-// 			}
+			@include breakpoint(large) {
+				@include span-columns(4);
+				@include omega();
+			}
 
-// 		}		
-// 	}
-// }
+		}		
+	}
+}
 
-.about-us,
-.our-clients,
 .page-template-page-full-width-php {
 	#content {
 		#primary {
@@ -47,10 +45,8 @@
 	}
 }
 
-.page-template-page-full-width-php.logged-in.admin-bar.group-blog.not-home.test.page-test.debug-bar-maximized.customize-support div#page.hfeed.site div#content.site-content div#primary {
-	@include span-columns(16);
-}
 
+// Home Page
 .intro-text #home-text {
 	display: none;
 	@include breakpoint(small) {
@@ -63,6 +59,13 @@
 		margin: 0;
 		padding: 0;
 		background: $light-green;
+	}
+}
+
+// Hide slider for smaller screens
+.bx-wrapper {
+	@include breakpoint(small) {
+		display: none;
 	}
 }
 

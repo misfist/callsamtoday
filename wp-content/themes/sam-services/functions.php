@@ -26,62 +26,49 @@ if ( ! function_exists( 'sam_services_setup' ) ) :
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  */
-function sam_services_setup() {
+	function sam_services_setup() {
 
-	/*
-	 * Make theme available for translation.
-	 * Translations can be filed in the /languages/ directory.
-	 * If you're building a theme based on SAM Services (_s), use a find and replace
-	 * to change 'sam-services' to the name of your theme in all the template files
-	 */
-	load_theme_textdomain( 'sam-services', get_template_directory() . '/languages' );
+		/*
+		 * Make theme available for translation.
+		 * Translations can be filed in the /languages/ directory.
+		 * If you're building a theme based on SAM Services (_s), use a find and replace
+		 * to change 'sam-services' to the name of your theme in all the template files
+		 */
+		load_theme_textdomain( 'sam-services', get_template_directory() . '/languages' );
 
-	// Add default posts and comments RSS feed links to head.
-	add_theme_support( 'automatic-feed-links' );
+		// Add default posts and comments RSS feed links to head.
+		add_theme_support( 'automatic-feed-links' );
 
-	/*
-	 * Enable support for Post Thumbnails on posts and pages.
-	 *
-	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
-	 */
-	add_theme_support( 'post-thumbnails' );
+		/*
+		 * Enable support for Post Thumbnails on posts and pages.
+		 *
+		 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
+		 */
+		add_theme_support( 'post-thumbnails' );
 
-	// add_theme_support( 'custom-header' );
+		// add_theme_support( 'custom-header' );
 
-	// This theme uses wp_nav_menu() in one location.
-	register_nav_menus( array(
-		'primary' => __( 'Primary Menu', 'sam-services' ),
-		'footer' => __( 'Footer Menu', 'sam-services' ),
-		'social' => __( 'Social Menu', 'sam-services' ),
-		'legal' => __( 'Legal Menu', 'sam-services' ),
-	) );
+		// This theme uses wp_nav_menu() in one location.
+		register_nav_menus( array(
+			'primary' => __( 'Primary Menu', 'sam-services' ),
+			'footer' => __( 'Footer Menu', 'sam-services' ),
+			'social' => __( 'Social Menu', 'sam-services' ),
+			'legal' => __( 'Legal Menu', 'sam-services' ),
+		) );
 
-	/*
-	 * Switch default core markup for search form, comment form, and comments
-	 * to output valid HTML5.
-	 */
-	add_theme_support( 'html5', array(
-		'search-form', 
-		'comment-form', 
-		'comment-list', 
-		'gallery', 
-		'caption',
-	) );
-
-	/*
-	 * Enable support for Post Formats.
-	 * See http://codex.wordpress.org/Post_Formats
-	 */
-	// add_theme_support( 'post-formats', array(
-	// 	'aside', 'image', 'video', 'quote', 'link',
-	// ) );
-
-	// Setup the WordPress core custom background feature.
-	// add_theme_support( 'custom-background', apply_filters( 'sam_services_custom_background_args', array(
-	// 	'default-color' => 'ffffff',
-	// 	'default-image' => '',
-	// ) ) );
-}
+		/*
+		 * Switch default core markup for search form, comment form, and comments
+		 * to output valid HTML5.
+		 */
+		add_theme_support( 'html5', array(
+			'search-form', 
+			'comment-form', 
+			'comment-list', 
+			'gallery', 
+			'caption',
+		) );
+	}
+	
 endif; // sam_services_setup
 add_action( 'after_setup_theme', 'sam_services_setup' );
 
@@ -197,9 +184,9 @@ function sam_services_scripts() {
 
 	wp_enqueue_style( 'sam-services-web-fonts', 'http://fonts.googleapis.com/css?family=Oswald:400,300,700|Open+Sans+Condensed:300,300italic,700|Open+Sans:400,700,700italic,400italic|Lato:400,400italic,700italic,700,300,300italic|family=Quattrocento:400,700');
 
-	wp_enqueue_script( 'sam-services-responsive-slider', get_template_directory_uri() . '/js/slippry/slippry.js', array(), '20141002', true );
+	// wp_enqueue_script( 'sam-services-responsive-slider', get_template_directory_uri() . '/js/slippry/slippry.js', array(), '20141002', true );
 
-	wp_enqueue_style( 'sam-services-responsive-slider-styles', get_template_directory_uri() . '/js/slippry/slippry.css');
+	// wp_enqueue_style( 'sam-services-responsive-slider-styles', get_template_directory_uri() . '/js/slippry/slippry.css');
 
 	// wp_enqueue_script( 'sam-services-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 

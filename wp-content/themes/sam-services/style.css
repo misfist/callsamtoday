@@ -1173,60 +1173,63 @@ Using Bourbon Neat http://neat.bourbon.io
       .not-home #content #secondary:last-child {
         margin-right: 0; } }
 
-/* line 43, sass/site/_containers.scss */
-.about-us #content #primary,
-.our-clients #content #primary {
+/* line 42, sass/site/_containers.scss */
+.page-template-page-full-width-php #content #primary {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 100%; }
   /* line 38, sass/lib/neat/grid/_span-columns.scss */
-  .about-us #content #primary:last-child,
-  .our-clients #content #primary:last-child {
+  .page-template-page-full-width-php #content #primary:last-child {
     margin-right: 0; }
 
-/* line 49, sass/site/_containers.scss */
+/* line 50, sass/site/_containers.scss */
 .intro-text #home-text {
   display: none; }
   @media (max-width: 768px) {
-    /* line 49, sass/site/_containers.scss */
+    /* line 50, sass/site/_containers.scss */
     .intro-text #home-text {
       display: inherit; } }
 
 @media (max-width: 768px) {
-  /* line 56, sass/site/_containers.scss */
+  /* line 57, sass/site/_containers.scss */
   .home #main {
     margin: 0;
     padding: 0;
     background: #47CAAA; } }
 
+@media (max-width: 768px) {
+  /* line 66, sass/site/_containers.scss */
+  .bx-wrapper {
+    display: none; } }
+
 @media (min-width: 769px) {
-  /* line 64, sass/site/_containers.scss */
+  /* line 72, sass/site/_containers.scss */
   .home article.page {
     margin-top: 0; } }
 @media (max-width: 768px) {
-  /* line 64, sass/site/_containers.scss */
+  /* line 72, sass/site/_containers.scss */
   .home article.page {
     margin-top: 0; } }
 
 @media (min-width: 769px) {
-  /* line 73, sass/site/_containers.scss */
+  /* line 81, sass/site/_containers.scss */
   .home .home-promos {
     padding-right: 1%;
     padding-left: 1%; } }
 @media (max-width: 768px) {
-  /* line 73, sass/site/_containers.scss */
+  /* line 81, sass/site/_containers.scss */
   .home .home-promos {
     padding-right: 2%;
     padding-left: 2%; } }
 
-/* line 84, sass/site/_containers.scss */
+/* line 92, sass/site/_containers.scss */
 footer.footer .copyleft {
   height: 30px;
   line-height: 30px;
   vertical-align: center; }
 
-/* line 90, sass/site/_containers.scss */
+/* line 98, sass/site/_containers.scss */
 footer.footer .copyleft img {
   display: inline-block;
   width: 25px;

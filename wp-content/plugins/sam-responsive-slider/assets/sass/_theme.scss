@@ -1,0 +1,127 @@
+//==THEMING==//
+
+$h2-font-size: 42px;
+$h3-font-size: 36px;
+$button-font-size: 18px;
+
+// Color
+$white: #fff;
+$black: #2E2E2E;
+$blue: #477DCA;
+$dark-blue: #40526B;
+$aqua: #47CAAA;
+$green: #A9CA47;
+$blue-black: #130812;
+
+// blue rgb(71,125,202)
+// dark-blue rgb(64,82,107)
+// aqua rgb(71,202,170)
+// green rgb(169,202,71)
+// white rgb(255,255,255)
+// black rgb(46,46,46)
+// blue-black rgb(19,8,18)
+
+@import "controls/*.png";
+@include all-controls-sprites;
+
+#sam-slider {
+
+	.slide {
+
+		img.slide-image {
+			// filter: grayscale(1);
+			// -webkit-filter: grayscale(1);
+			filter: hue-rotate(360deg);
+			-webkit-filter: hue-rotate(360deg);
+			// filter: sepia(0.2);
+			// -webkit-filter: sepia(0.2);
+		}
+
+		.slide-caption {
+			top: 0;
+			width: 55%;
+			padding: 3em 2em 2em 4em;
+			height: 100%;
+			background-color: $dark-blue;
+			// background-color: rgba(255,255,255,0.25);
+			background-color: rgba(64,82,107,0.9);
+
+
+			h2.slide-header,
+			h3.slide-text,
+			a.slide-button {}
+
+			h2.slide-header {
+				color: $white;
+				text-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+				font-size: $h2-font-size;
+				font-weight: 300;
+			}
+			h3.slide-text {
+				color: $white;
+				text-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+				margin: .5em 0 1em 0;
+			}
+			a.slide-button {
+				padding: .5em .8em;
+				border-radius: 4px;
+				background: $black;
+				color: $white;
+				font-weight: 700;
+				font-size: $button-font-size;
+				line-height: $button-font-size;
+				text-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+				text-transform: uppercase;
+				&:visited {
+					color: $white;
+				}
+			}
+		}
+	}
+
+	strong,
+	bold {
+		font-weight: 500;
+		font-style: italic;
+	}
+}
+
+.bx-wrapper {
+
+	.bx-viewport {
+		border: 10px solid $white;
+		box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.75);
+	}
+
+	.bx-prev,
+	.bx-next {
+		@extend .controls-sprite;
+		background-color: $black;
+		height: 50px !important;
+		width: 30px;
+	}
+
+	.bx-prev {
+		@extend .controls-angle-left;
+		&:hover {
+			@extend .controls-angle-left;
+		}
+		left: 10px;
+	}
+	.bx-next {
+		@extend .controls-angle-right;
+		&:hover {
+			@extend .controls-angle-right;
+		}
+		right: 15px;
+	}
+}
+
+
+
+
+button {
+  // @include button(simple, $base-background-color);
+  // font-size: $base-font-size;
+  // outline: none;
+}

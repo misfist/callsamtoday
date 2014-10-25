@@ -1,0 +1,39 @@
+//==BASE STYLES==//
+
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+
+.bx-wrapper {
+	
+	.bx-viewport {}
+}
+
+#sam-slider {
+
+	.slide {
+
+		.slide-caption {
+			position: absolute;
+
+			h2.slide-header,
+			h3.slide-text,
+			a.slide-button {
+				position: relative;
+			}
+
+			h2.slide-header,
+			h3.slide-text {
+				display: block;
+				width: 100%;
+			}
+
+			h2.slide-header {}
+			h3.slide-text {}
+			a.slide-button {}
+
+		}
+	}
+}

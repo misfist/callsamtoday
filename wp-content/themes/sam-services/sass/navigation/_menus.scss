@@ -98,3 +98,7 @@
 	text-align: right;
 	width: 50%;
 }
+
+.navigation-tools {
+	@include clearfix;
+}

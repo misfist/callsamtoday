@@ -1,8 +1,15 @@
 //==THEMING==//
 
 $h2-font-size: 42px;
-$h3-font-size: 36px;
+$h3-font-size: 34px;
 $button-font-size: 18px;
+
+$h2-font-size-sm: $h2-font-size * .75;
+$h3-font-size-sm: $h3-font-size * .75;
+$button-font-size-sm: $button-font-size * .75;
+
+$break-large: 1024px;
+$break-medium: 768px;
 
 // Color
 $white: #fff;
@@ -13,14 +20,6 @@ $aqua: #47CAAA;
 $green: #A9CA47;
 $blue-black: #130812;
 
-// blue rgb(71,125,202)
-// dark-blue rgb(64,82,107)
-// aqua rgb(71,202,170)
-// green rgb(169,202,71)
-// white rgb(255,255,255)
-// black rgb(46,46,46)
-// blue-black rgb(19,8,18)
-
 @import "controls/*.png";
 @include all-controls-sprites;
 
@@ -29,12 +28,8 @@ $blue-black: #130812;
 	.slide {
 
 		img.slide-image {
-			// filter: grayscale(1);
-			// -webkit-filter: grayscale(1);
 			filter: hue-rotate(360deg);
 			-webkit-filter: hue-rotate(360deg);
-			// filter: sepia(0.2);
-			// -webkit-filter: sepia(0.2);
 		}
 
 		.slide-caption {
@@ -45,7 +40,9 @@ $blue-black: #130812;
 			background-color: $dark-blue;
 			// background-color: rgba(255,255,255,0.25);
 			background-color: rgba(64,82,107,0.9);
-
+			@media screen and (max-width: $break-large) {
+				padding: 2em 1em 1em 3em;
+			}
 
 			h2.slide-header,
 			h3.slide-text,
@@ -56,11 +53,18 @@ $blue-black: #130812;
 				text-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
 				font-size: $h2-font-size;
 				font-weight: 300;
+				@media screen and (max-width: $break-large) {
+					font-size: $h2-font-size * .75;
+				}
 			}
 			h3.slide-text {
 				color: $white;
 				text-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
 				margin: .5em 0 1em 0;
+				font-size: $h3-font-size;
+				@media screen and (max-width: $break-large) {
+					font-size: $h3-font-size * .5;
+				}
 			}
 			a.slide-button {
 				padding: .5em .8em;

@@ -35,12 +35,12 @@
   background-position: 0 -50px;
 }
 
-/* line 31, assets/sass/_theme.scss */
+/* line 30, assets/sass/_theme.scss */
 #sam-slider .slide img.slide-image {
   filter: hue-rotate(360deg);
   -webkit-filter: hue-rotate(360deg);
 }
-/* line 40, assets/sass/_theme.scss */
+/* line 35, assets/sass/_theme.scss */
 #sam-slider .slide .slide-caption {
   top: 0;
   width: 55%;
@@ -49,20 +49,39 @@
   background-color: #40526B;
   background-color: rgba(64, 82, 107, 0.9);
 }
-/* line 54, assets/sass/_theme.scss */
+@media screen and (max-width: 1024px) {
+  /* line 35, assets/sass/_theme.scss */
+  #sam-slider .slide .slide-caption {
+    padding: 2em 1em 1em 3em;
+  }
+}
+/* line 51, assets/sass/_theme.scss */
 #sam-slider .slide .slide-caption h2.slide-header {
   color: #fff;
   text-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
   font-size: 42px;
   font-weight: 300;
 }
+@media screen and (max-width: 1024px) {
+  /* line 51, assets/sass/_theme.scss */
+  #sam-slider .slide .slide-caption h2.slide-header {
+    font-size: 31.5px;
+  }
+}
 /* line 60, assets/sass/_theme.scss */
 #sam-slider .slide .slide-caption h3.slide-text {
   color: #fff;
   text-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
   margin: .5em 0 1em 0;
+  font-size: 34px;
 }
-/* line 65, assets/sass/_theme.scss */
+@media screen and (max-width: 1024px) {
+  /* line 60, assets/sass/_theme.scss */
+  #sam-slider .slide .slide-caption h3.slide-text {
+    font-size: 17px;
+  }
+}
+/* line 69, assets/sass/_theme.scss */
 #sam-slider .slide .slide-caption a.slide-button {
   padding: .5em .8em;
   border-radius: 4px;
@@ -74,34 +93,34 @@
   text-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
   text-transform: uppercase;
 }
-/* line 75, assets/sass/_theme.scss */
+/* line 79, assets/sass/_theme.scss */
 #sam-slider .slide .slide-caption a.slide-button:visited {
   color: #fff;
 }
-/* line 82, assets/sass/_theme.scss */
+/* line 86, assets/sass/_theme.scss */
 #sam-slider strong,
 #sam-slider bold {
   font-weight: 500;
   font-style: italic;
 }
 
-/* line 91, assets/sass/_theme.scss */
+/* line 95, assets/sass/_theme.scss */
 .bx-wrapper .bx-viewport {
   border: 10px solid #fff;
   box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.75);
 }
-/* line 96, assets/sass/_theme.scss */
+/* line 100, assets/sass/_theme.scss */
 .bx-wrapper .bx-prev,
 .bx-wrapper .bx-next {
   background-color: #2E2E2E;
   height: 50px !important;
   width: 30px;
 }
-/* line 104, assets/sass/_theme.scss */
+/* line 108, assets/sass/_theme.scss */
 .bx-wrapper .bx-prev {
   left: 10px;
 }
-/* line 111, assets/sass/_theme.scss */
+/* line 115, assets/sass/_theme.scss */
 .bx-wrapper .bx-next {
   right: 15px;
 }

@@ -1,7 +1,7 @@
 //==THEMING==//
 
 $h2-font-size: 42px;
-$h3-font-size: 32px;
+$h3-font-size: 30px;
 $button-font-size: 18px;
 
 $h2-font-size-sm: $h2-font-size * .75;
@@ -35,7 +35,7 @@ $blue-black: #130812;
 		.slide-caption {
 			top: 0;
 			width: 55%;
-			padding: 2.5em 2em 2em 4em;
+			padding: 2em 2em 2em 4em;
 			height: 100%;
 			background-color: $dark-blue;
 			// background-color: rgba(255,255,255,0.25);
